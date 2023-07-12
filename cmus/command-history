@@ -1,7 +1,0 @@
-a
-set play_library=true
-set play_library=false
-fa
-q
-add ~/Music/Sidify/
-clear
