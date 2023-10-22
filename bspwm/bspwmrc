@@ -140,13 +140,6 @@ case "${RICETHEME}" in
 		launch dunst -config ${BSPDIR}/dunstrc-dark
 		;;
 
-    colorful)
-        SetBspwmConf "${BSPWM_BORDER}" 60 5 "#C574DD" "#C574DD" "#189" "#FF4" 5 5 "${BSPWM_GAP}"
-
-        killeww
-        launch dunst -config ${BSPDIR}/dunstrc-light
-        ;;
-
 esac
 
 ###########---------- BSPWM Config ----------##########
