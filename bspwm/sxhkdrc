@@ -22,7 +22,7 @@ super + alt + Return
 # Apps
 alt + {b,g,i,m,p,k,t,q,r,o}
 	{vivaldi-stable, \
-	code, \
+    code, \
 	alacritty -e ranger, \
 	alacritty -e btop, \
 	pavucontrol, \
@@ -58,8 +58,8 @@ ctrl + alt {plus,minus,t}
 	{picom-trans -c -o +3, picom-trans -c -o -1, picom-trans -c -d}
 
 # Apagar, Reiniciar, Cerrar Sesion, bloquear
-ctrl + super + alt + {p,r,q,l}
-	{systemctl poweroff, systemctl reboot,bspc quit,physlock -d}
+ctrl + super + alt + {p,r,q,l,s}
+	{systemctl poweroff, systemctl reboot, bspc quit, physlock -d, systemctl suspend}
 
 # Matar Procesos
 ctrl + super + alt + k
