@@ -62,11 +62,9 @@ cava-git
 cblas
 cdparanoia
 chromaprint
-clang
 clucene
 cmatrix-git
 code
-compiler-rt
 coreutils
 cryptsetup
 curl
@@ -716,7 +714,6 @@ perl-log-message-simple
 perl-lwp-mediatypes
 perl-lwp-protocol-https
 perl-mailtools
-perl-mozilla-ca
 perl-net-http
 perl-net-ssleay
 perl-term-readline-gnu
@@ -756,6 +753,7 @@ python-beautifulsoup4
 python-cairo
 python-certifi
 python-chardet
+python-charset-normalizer
 python-distro
 python-docopt
 python-evdev
