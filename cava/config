@@ -140,6 +140,17 @@ style = mono
 
 [color]
 
+gradient = 0
+gradient_count = 2
+gradient_color_1 = '#a3be8c'
+gradient_color_2 = '#a3be8c'
+gradient_color_3 = '#a3be8c'
+gradient_color_4 = '#a3be8c'
+gradient_color_5 = '#a3be8c'
+gradient_color_6 = '#a3be8c'
+gradient_color_7 = '#a3be8c'
+gradient_color_8 = '#a3be8c'
+
 #background = '#191724'
 gradient = 1
 gradient_count = 6

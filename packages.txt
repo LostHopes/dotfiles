@@ -3,6 +3,7 @@ aalib
 abseil-cpp
 accounts-qml-module
 acl
+acpi
 adobe-source-code-pro-fonts
 adwaita-cursors
 adwaita-icon-theme
@@ -893,7 +894,6 @@ poppler-qt5
 popt
 portaudio
 potrace
-premid-nightly
 procps-ng
 projectm
 protobuf
@@ -954,6 +954,7 @@ qt6-svg
 qt6-translations
 qt6-wayland
 quazip-qt5
+radeontop
 ranger
 raptor
 rasqal
@@ -1119,8 +1120,8 @@ virtualbox
 virtualbox-guest-iso
 virtualbox-guest-utils
 virtualbox-host-dkms
-vivaldi
-vivaldi-ffmpeg-codecs
+vivaldi-snapshot
+vivaldi-snapshot-ffmpeg-codecs
 vmaf
 volume_key
 vulkan-headers
@@ -1166,7 +1167,6 @@ xdg-desktop-portal
 xdg-desktop-portal-gtk
 xdg-utils
 xf86-input-libinput
-xf86-video-ati
 xf86-video-vmware
 xfsprogs
 xkeyboard-config
