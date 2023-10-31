@@ -19,7 +19,7 @@ super + Return
 super + alt + Return
 	Term --oft
 	
-# Apps
+# Apps (switch to okular if prefered)
 alt + {b,g,i,m,p,k,t,q,r,o}
 	{vivaldi-stable, \
     code, \
@@ -29,7 +29,7 @@ alt + {b,g,i,m,p,k,t,q,r,o}
 	alacritty, \
 	telegram-desktop, \
 	spotify-launcher, \
-	okular, \
+    zathura &, \
 	obsidian, \
 	}
 
