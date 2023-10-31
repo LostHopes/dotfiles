@@ -1,0 +1,8 @@
+# One page per row by default
+set pages-per-row 1
+
+# Disable status bar by default
+set guioptions none
+
+# copy text to clipboard by default
+set selection-clipboard clipboard
