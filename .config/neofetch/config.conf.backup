@@ -1,37 +1,41 @@
+# See this wiki page for more info:
+# https://github.com/dylanaraps/neofetch/wiki/Customizing-Info
 print_info() {
-    prin "┌─────────\n Hardware Information \n────────────────────────┐"
-    info " ​ ​ 󰌢 " model
-    info " ​ ​ 󰍛 " cpu
-    info " ​ ​ 󰘚 " gpu
-#    info " ​ ​  " disk
-    info " ​ ​ 󰑭" memory
-    info " ​ ​ 󰍹 " resolution
-#    info " ​ ​ 󱈑 " battery 
-    prin "├─────────\n Software Information \n────────────────────────┤"
-#    info " ​ ​  " users
-    info " ​ ​  " distro
-# Just get your distro's logo off nerdfonts.com
-    info " ​ ​  " kernel
-#    info " ​ ​  " de
-    info " ​ ​  " wm
-    info " ​ ​  " shell
-    info " ​ ​  " term
-    info " ​ ​  " term_font
-#    info " ​ ​ │  " font
-#    info " ​ ​  󰉼 " theme
-#    info " ​ ​  󰀻 " icons
-    info " ​ ​ 󰊠 " packages 
-#    info " ​ ​  󰅐 " uptime
-#    info " ​ ​   " gpu_driver  # Linux/macOS only
-#    info " ​ ​  " cpu_usage
-#    info " ​ ​ 󰝚 " song
+    info title
+    info underline
+
+    info "OS" distro
+    info "Host" model
+    info "Kernel" kernel
+    info "Uptime" uptime
+    info "Packages" packages
+    info "Shell" shell
+    info "Resolution" resolution
+    info "DE" de
+    info "WM" wm
+    info "WM Theme" wm_theme
+    info "Theme" theme
+    info "Icons" icons
+    info "Terminal" term
+    info "Terminal Font" term_font
+    info "CPU" cpu
+    info "GPU" gpu
+    info "Memory" memory
+
+    info "GPU Driver" gpu_driver  # Linux/macOS only
+    # info "CPU Usage" cpu_usage
+    # info "Disk" disk
+    # info "Battery" battery
+    # info "Font" font
+    # was commented
+     info "Song" song
     # [[ "$player" ]] && prin "Music Player" "$player"
-#    info " ​ ​   " local_ip
-#    info " ​ ​   " public_ip
-#    info " ​ ​   " locale  # This only works on glibc systems.
-    prin "└───────────────────────────────────────────────────────┘"
+    # info "Local IP" local_ip
+    # info "Public IP" public_ip
+    # info "Users" users
+    # info "Locale" locale  # This only works on glibc systems.
+
     info cols
-prin "\n \n \n \n \n ${cl3} \n \n ${cl5} \n \n ${cl2} \n \n ${cl6}  \n \n ${cl4}  \n \n ${cl1}  \n \n ${cl7}  \n \n ${cl0}"
 }
 
 # Title
@@ -261,7 +265,7 @@ cpu_temp="off"
 # Example:
 # on:  'AMD HD 7950'
 # off: 'HD 7950'
-gpu_brand="off"
+gpu_brand="on"
 
 # Which GPU to display
 #
@@ -475,7 +479,9 @@ disk_percent="on"
 # xmms2d
 # xnoise
 # yarock
-music_player="auto"
+
+# was music_player="auto"
+music_player="spotify"
 
 # Format to display song information.
 #
@@ -523,8 +529,11 @@ mpc_args=()
 # Example:
 # colors=(distro)      - Text is colored based on Distro colors.
 # colors=(4 6 1 8 8 6) - Text is colored in the order above.
+
+# Previous config (Arsen)
 colors=(distro)
 
+#colors=(75 111 182 217 224 225)
 
 # Text Options
 
@@ -691,7 +700,7 @@ disk_display="off"
 # Values:   'ascii', 'caca', 'chafa', 'jp2a', 'iterm2', 'off',
 #           'pot', 'termpix', 'pixterm', 'tycat', 'w3m', 'kitty'
 # Flag:     --backend
-image_backend="ascii"
+image_backend="auto"
 
 # Image Source
 #
@@ -768,14 +777,18 @@ ascii_distro="auto"
 # Example:
 # ascii_colors=(distro)      - Ascii is colored based on Distro colors.
 # ascii_colors=(4 6 1 8 8 6) - Ascii is colored using these colors.
+
+# Previous config (Arsen)
 ascii_colors=(distro)
+
+#ascii_colors=(75 111 182 217 224 225)
 
 # Bold ascii logo
 # Whether or not to bold the ascii logo.
 #
 # Default: 'on'
 # Values:  'on', 'off'
-# Flag:    --ascii_bold
+# Flag:    --ascii_bol
 ascii_bold="on"
 
 
