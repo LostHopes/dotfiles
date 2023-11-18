@@ -136,7 +136,7 @@ case "${RICETHEME}" in
 		#default rice bar
 		#launch polybar -q arsen-bar -c ${PDIR}/config.ini
 		#main bar
-		launch polybar -q main -c $HOME/.config/polybar/config.ini
+		launch polybar -q main -c ${PDIR}/polybar/config.ini
 		launch dunst -config ${BSPDIR}/dunstrc-dark
 		;;
 

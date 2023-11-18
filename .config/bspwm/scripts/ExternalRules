@@ -89,6 +89,7 @@ esac
 
 addons(){
     bspc rule -a Zathura state=tiled desktop=^1
+    bspc rule -a okular state=tiled desktop=^1
 }
 
 addons
