@@ -18,4 +18,9 @@ keymap.set("n", "<leader>tp", ":tabp<CR>") --  go to previous tab
 -- nvim-tree
 keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>") -- toggle file explorer
 
+keymap.set("n", "<leader>ct", function()
+  require("telescope.builtin").colorscheme(colorscheme)
+end, { noremap = true, silent = true })
+
+keymap.set("n", "<leader>op", ":Telescope neovim-project discover<CR>")
 

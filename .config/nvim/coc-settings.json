@@ -1,0 +1,17 @@
+{
+  "python.pythonPath": "python3",
+  "python.linting.enabled": true,
+  "python.linting.flake8Enabled": true,
+  "python.formatting.enabled": true,
+  "python.formatting.blackPath": "black",
+  "python.typeChecking.enabled": true,
+  "python.typeChecking.pyrightPath": "pyright",
+  "python.autoImport.enabled": true,
+  "python.autoImport.exclude": ["<built-in>"],
+  "python.diagnosticLanguageserver": "pyright",
+  "python.codeActions": {
+    "runTests": {
+      "enabled": true
+    }
+  }
+}

@@ -68,6 +68,7 @@ use({
     end,
 })
 
+
 -- gruvbox theme
 use("ellisonleao/gruvbox.nvim")
 
@@ -76,21 +77,34 @@ use("petertriho/nvim-scrollbar")
 
 --project manager
 
-use {
-  "ahmedkhalf/project.nvim",
+use({
+  "coffebar/neovim-project",
   config = function()
-    require("project_nvim").setup {
-        -- Future configutation
-    }
-  end
-}
+    -- enable saving the state of plugins in the session
+    vim.opt.sessionoptions:append("globals") -- save global variables that start with an uppercase letter and contain at least one lowercase letter.
+  end,
+  requires = {
+    { "nvim-lua/plenary.nvim" },
+    { "nvim-telescope/telescope.nvim"},
+    { "Shatur/neovim-session-manager" },
+  }
+})
 
--- telescope (finder)
+-- autocompletion
 
-use {
-  'nvim-telescope/telescope.nvim', tag = '0.1.4',
-  requires = { {'nvim-lua/plenary.nvim'} }
-}
+use{"neoclide/coc.nvim", branch="release"}
+
+use({
+    "williamboman/mason.nvim"
+    , requires = {
+    {"neovim/nvim-lspconfig"},
+    {"rcarriga/nvim-dap-ui"},
+    {"mfussenegger/nvim-dap"},
+    {"williamboman/mason-lspconfig.nvim"},
+    {"folke/neodev.nvim"},
+}})
+
+
 
 if packer_bootstrap then
     require("packer").sync()

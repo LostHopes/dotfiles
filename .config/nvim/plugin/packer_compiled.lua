@@ -79,6 +79,11 @@ _G.packer_plugins = {
     path = "/home/losthope/.local/share/nvim/site/pack/packer/start/clangd_extensions.nvim",
     url = "https://github.com/p00f/clangd_extensions.nvim"
   },
+  ["coc.nvim"] = {
+    loaded = true,
+    path = "/home/losthope/.local/share/nvim/site/pack/packer/start/coc.nvim",
+    url = "https://github.com/neoclide/coc.nvim"
+  },
   ["gitsigns.nvim"] = {
     loaded = true,
     path = "/home/losthope/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
@@ -94,10 +99,36 @@ _G.packer_plugins = {
     path = "/home/losthope/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
   },
+  ["mason-lspconfig.nvim"] = {
+    loaded = true,
+    path = "/home/losthope/.local/share/nvim/site/pack/packer/start/mason-lspconfig.nvim",
+    url = "https://github.com/williamboman/mason-lspconfig.nvim"
+  },
   ["mason-null-ls.nvim"] = {
     loaded = true,
     path = "/home/losthope/.local/share/nvim/site/pack/packer/start/mason-null-ls.nvim",
     url = "https://github.com/jayp0521/mason-null-ls.nvim"
+  },
+  ["mason.nvim"] = {
+    loaded = true,
+    path = "/home/losthope/.local/share/nvim/site/pack/packer/start/mason.nvim",
+    url = "https://github.com/williamboman/mason.nvim"
+  },
+  ["neodev.nvim"] = {
+    loaded = true,
+    path = "/home/losthope/.local/share/nvim/site/pack/packer/start/neodev.nvim",
+    url = "https://github.com/folke/neodev.nvim"
+  },
+  ["neovim-project"] = {
+    config = { "\27LJ\2\nM\0\0\4\0\5\0\b6\0\0\0009\0\1\0009\0\2\0\18\2\0\0009\0\3\0'\3\4\0B\0\3\1K\0\1\0\fglobals\vappend\19sessionoptions\bopt\bvim\0" },
+    loaded = true,
+    path = "/home/losthope/.local/share/nvim/site/pack/packer/start/neovim-project",
+    url = "https://github.com/coffebar/neovim-project"
+  },
+  ["neovim-session-manager"] = {
+    loaded = true,
+    path = "/home/losthope/.local/share/nvim/site/pack/packer/start/neovim-session-manager",
+    url = "https://github.com/Shatur/neovim-session-manager"
   },
   ["null-ls.nvim"] = {
     loaded = true,
@@ -113,6 +144,21 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/losthope/.local/share/nvim/site/pack/packer/start/nvim-colorizer.lua",
     url = "https://github.com/norcalli/nvim-colorizer.lua"
+  },
+  ["nvim-dap"] = {
+    loaded = true,
+    path = "/home/losthope/.local/share/nvim/site/pack/packer/start/nvim-dap",
+    url = "https://github.com/mfussenegger/nvim-dap"
+  },
+  ["nvim-dap-ui"] = {
+    loaded = true,
+    path = "/home/losthope/.local/share/nvim/site/pack/packer/start/nvim-dap-ui",
+    url = "https://github.com/rcarriga/nvim-dap-ui"
+  },
+  ["nvim-lspconfig"] = {
+    loaded = true,
+    path = "/home/losthope/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
+    url = "https://github.com/neovim/nvim-lspconfig"
   },
   ["nvim-scrollbar"] = {
     loaded = true,
@@ -156,12 +202,6 @@ _G.packer_plugins = {
     path = "/home/losthope/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
-  ["project.nvim"] = {
-    config = { "\27LJ\2\n>\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\17project_nvim\frequire\0" },
-    loaded = true,
-    path = "/home/losthope/.local/share/nvim/site/pack/packer/start/project.nvim",
-    url = "https://github.com/ahmedkhalf/project.nvim"
-  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "/home/losthope/.local/share/nvim/site/pack/packer/start/telescope.nvim",
@@ -170,10 +210,10 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: project.nvim
-time([[Config for project.nvim]], true)
-try_loadstring("\27LJ\2\n>\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\17project_nvim\frequire\0", "config", "project.nvim")
-time([[Config for project.nvim]], false)
+-- Config for: neovim-project
+time([[Config for neovim-project]], true)
+try_loadstring("\27LJ\2\nM\0\0\4\0\5\0\b6\0\0\0009\0\1\0009\0\2\0\18\2\0\0009\0\3\0'\3\4\0B\0\3\1K\0\1\0\fglobals\vappend\19sessionoptions\bopt\bvim\0", "config", "neovim-project")
+time([[Config for neovim-project]], false)
 -- Load plugins in order defined by `after`
 time([[Sequenced loading]], true)
 vim.cmd [[ packadd nvim-treesitter ]]
