@@ -76,8 +76,21 @@ use("petertriho/nvim-scrollbar")
 
 --project manager
 
-use("pluffie/neoproj")
+use {
+  "ahmedkhalf/project.nvim",
+  config = function()
+    require("project_nvim").setup {
+        -- Future configutation
+    }
+  end
+}
 
+-- telescope (finder)
+
+use {
+  'nvim-telescope/telescope.nvim', tag = '0.1.4',
+  requires = { {'nvim-lua/plenary.nvim'} }
+}
 
 if packer_bootstrap then
     require("packer").sync()
