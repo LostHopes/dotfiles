@@ -31,13 +31,21 @@ return packer.startup(function(use)
   -- packer can manage itself
 use("wbthomason/packer.nvim")
 
-use("navarasu/onedark.nvim")
+   -- treesitter configuration
+use({
+    "nvim-treesitter/nvim-treesitter",
+    run = function()
+      local ts_update = require("nvim-treesitter.install").update({ with_sync = true })
+      ts_update()
+    end,
+})
 
 -- file explorer
+
 use("nvim-tree/nvim-tree.lua")
 
--- vs-code like icons
-use("nvim-tree/nvim-web-devicons")
+use("navarasu/onedark.nvim")
+
 
 -- statusline
 use("nvim-lualine/lualine.nvim")
@@ -48,9 +56,6 @@ use("norcalli/nvim-colorizer.lua")
 -- C++
 use("p00f/clangd_extensions.nvim")
 
--- formatting & linting
-use ('jose-elias-alvarez/null-ls.nvim') -- configure formatters & linters
-use ('jayp0521/mason-null-ls.nvim') -- bridges gap b/w mason & null-ls
 
 -- auto closing
 use ('windwp/nvim-autopairs') -- autoclose parens, brackets, quotes, etc...
@@ -58,15 +63,6 @@ use { "windwp/nvim-ts-autotag", after = "nvim-treesitter" } -- autoclose tags
 
   -- git integration
   use ('lewis6991/gitsigns.nvim') -- show line modifications on left hand side
-
-   -- treesitter configuration
-use({
-    "nvim-treesitter/nvim-treesitter",
-    run = function()
-      local ts_update = require("nvim-treesitter.install").update({ with_sync = true })
-      ts_update()
-    end,
-})
 
 
 -- gruvbox theme
@@ -94,17 +90,17 @@ use({
 
 use{"neoclide/coc.nvim", branch="release"}
 
-use({
-    "williamboman/mason.nvim"
-    , requires = {
-    {"neovim/nvim-lspconfig"},
-    {"rcarriga/nvim-dap-ui"},
-    {"mfussenegger/nvim-dap"},
-    {"williamboman/mason-lspconfig.nvim"},
-    {"folke/neodev.nvim"},
-}})
+-- comments
 
+use {
+    'numToStr/Comment.nvim',
+    config = function()
+        require('Comment').setup()
+    end
+}
 
+-- vs code like dev icons
+use("nvim-tree/nvim-web-devicons")
 
 if packer_bootstrap then
     require("packer").sync()
