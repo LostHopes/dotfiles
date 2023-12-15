@@ -7,8 +7,8 @@
 
 
 # set keyboard layout
-super + l
-	{setxkbmap us, setxkbmap ru, setxkbmap ua}
+#super + l
+	#{setxkbmap us, setxkbmap ru, setxkbmap ua}
 
 
 # terminal emulator
@@ -29,7 +29,7 @@ alt + {b,g,i,m,p,k,t,q,r,o}
 	alacritty, \
 	telegram-desktop, \
 	spotify-launcher, \
-    okular, \
+    zathura, \
 	obsidian, \
 	}
 
