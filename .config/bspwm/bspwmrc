@@ -144,6 +144,8 @@ esac
 
 ###########---------- BSPWM Config ----------##########
 
+setxkbmap -option grp:alt_shift_toggle us,ru,ua &
+
 bspc config external_rules_command ${BSPDIR}/scripts/ExternalRules
 
 bspc config single_monocle                true
