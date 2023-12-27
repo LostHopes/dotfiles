@@ -75,7 +75,7 @@ function killeww() {
 }
 
 function ReloadTerms() {
-  cat ${PDIR}/alacrittyrc > $HOME/.config/alacritty/alacritty.yml
+  cat ${PDIR}/alacrittyrc > $HOME/.config/alacritty/alacritty.toml
 }
 
 function SetBspwmConf() {
