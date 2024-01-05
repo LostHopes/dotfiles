@@ -29,13 +29,11 @@ automake
 avahi
 awesome-terminal-fonts
 ayatana-ido
-babl
 base
 base-devel
 bash
 binutils
 bison
-blas
 blueberry
 bluez
 bluez-libs
@@ -58,7 +56,6 @@ cairo
 cairomm
 cantarell-fonts
 cava-git
-cblas
 cdparanoia
 chromaprint
 clucene
@@ -91,7 +88,6 @@ downgrade
 duktape
 dunst
 e2fsprogs
-electron
 electron25
 enchant
 exiv2
@@ -126,11 +122,9 @@ gcr-4
 gd
 gdbm
 gdk-pixbuf2
-gegl
 gettext
 ghostscript
 giflib
-gimp
 girara
 git
 glew
@@ -162,7 +156,6 @@ groff
 grub
 gruvbox-dark-gtk
 gsettings-desktop-schemas
-gsfonts
 gsm
 gssdp
 gst-plugin-pipewire
@@ -217,10 +210,8 @@ kmod
 krb5
 l-smash
 lame
-lapack
 lcms2
 ldns
-lensfun
 less
 lib32-acl
 lib32-alsa-lib
@@ -344,7 +335,6 @@ libdatrie
 libdbusmenu-glib
 libdbusmenu-gtk3
 libdbusmenu-qt5
-libdc1394
 libde265
 libdecor
 libdeflate
@@ -372,7 +362,6 @@ libfontenc
 libfreeaptx
 libfreehand
 libgcrypt
-libgexiv2
 libgirepository
 libglvnd
 libgme
@@ -418,7 +407,6 @@ libmpdclient
 libmspack
 libmspub
 libmwaw
-libmypaint
 libmysofa
 libndp
 libnet
@@ -476,7 +464,6 @@ libsoup
 libsoup3
 libsoxr
 libspectre
-libspiro
 libssh
 libssh2
 libstaroffice
@@ -516,7 +503,6 @@ libvterm
 libwacom
 libwebp
 libwireplumber
-libwmf
 libwpd
 libwpe
 libwpg
@@ -580,7 +566,6 @@ luajit
 lv2
 lvm2
 lxappearance
-lynx
 lz4
 lzo
 m4
@@ -605,7 +590,6 @@ mpv
 msgpack-c
 mtdev
 mujs
-mypaint-brushes1
 ncmpcpp
 ncurses
 neofetch
@@ -625,12 +609,10 @@ nspr
 nss
 obsidian
 ocl-icd
-onetbb
 onevpl
 oniguruma
 openal
 opencore-amr
-opencv
 openexr
 openjpeg2
 openmpi
@@ -761,7 +743,6 @@ qt6-svg
 qt6-translations
 qt6-wayland
 quazip-qt5
-radeontop
 ranger
 raptor
 rasqal
@@ -803,7 +784,6 @@ srt
 startup-notification
 steam
 sudo
-suitesparse
 svt-av1
 sxhkd
 systemd
@@ -842,7 +822,6 @@ util-linux-libs
 v4l-utils
 vdpauinfo
 ventoy-bin
-verdict
 vid.stab
 virtualbox
 virtualbox-guest-iso
