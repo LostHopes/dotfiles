@@ -688,7 +688,6 @@ polybar
 poppler
 poppler-data
 poppler-glib
-poppler-qt5
 popt
 portaudio
 procps-ng
