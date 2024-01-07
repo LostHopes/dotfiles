@@ -10,7 +10,8 @@ else
   fi
 
   # if ! updates_aur=$(cower -u 2> /dev/null | wc -l); then
-  if ! updates_aur=$(trizen -Su --aur --quiet | wc -l); then
+  #if ! updates_aur=$(trizen -Su --aur --quiet | wc -l); then
+  if ! updates_aur=$(yay -S --quiet | wc -l); then
       updates_aur=0
   fi
 

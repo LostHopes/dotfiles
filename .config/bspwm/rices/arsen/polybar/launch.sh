@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Add this script to your wm startup file.
-DIR="$HOME/.config/polybar"
+DIR="$HOME~/.config/bspwm/rices/arsen/polybar"
 
 # Terminate already running bar instances
 killall -q polybar
