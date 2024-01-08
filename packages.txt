@@ -457,6 +457,7 @@ libshout
 libsidplayfp
 libsigc++
 libsigc++-3.0
+libsixel
 libsm
 libsndfile
 libsodium
@@ -798,7 +799,6 @@ tor-browser-bin
 tpm2-tss
 tracker3
 tree-sitter
-trizen
 tslib
 ttf-inconsolata
 ttf-jetbrains-mono
@@ -819,6 +819,7 @@ usbutils
 util-linux
 util-linux-libs
 v4l-utils
+vapoursynth
 vdpauinfo
 ventoy-bin
 vid.stab
@@ -836,7 +837,6 @@ vulkan-radeon
 vulkan-tools
 wavpack
 wayland
-wayland-protocols
 webkit2gtk
 webrtc-audio-processing-1
 which
