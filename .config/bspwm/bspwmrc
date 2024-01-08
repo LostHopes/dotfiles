@@ -125,7 +125,7 @@ case "${RICETHEME}" in
 		launch dunst -config ${BSPDIR}/dunstrc-dark
 		;;
 
-	arsen)
+	gruvbox)
 
         #Default border
 		# SetBspwmConf "${BSPWM_BORDER}" 10 60 "#9bced7" "#9bced7" "#c3a5e6" "#c3a5e6" 5 5 "${BSPWM_GAP}"
@@ -139,6 +139,11 @@ case "${RICETHEME}" in
 		launch polybar -q main -c ${PDIR}/polybar/config.ini
 		launch dunst -config ${BSPDIR}/dunstrc-dark
 		;;
+
+    glow)
+
+        ;;
+
 
 esac
 
