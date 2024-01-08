@@ -63,7 +63,7 @@ ctrl + super + alt + k
 
 # Menu aplicaciones
 super + @space 
-    ~/.config/bspwm/rices/arsen/polybar/scripts/launcher.sh &
+    ~/.config/bspwm/rices/gruvbox/polybar/scripts/launcher.sh &
 	#rofi -no-lazy-grab -show drun -theme $HOME/.config/bspwm/rices/$RICETHEME/launcher.rasi
 
 # Theme Selector
