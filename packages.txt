@@ -89,6 +89,7 @@ duktape
 dunst
 e2fsprogs
 electron25
+electron27
 enchant
 exiv2
 expat
@@ -238,6 +239,8 @@ lib32-libglvnd
 lib32-libgpg-error
 lib32-libidn2
 lib32-libldap
+lib32-libnghttp2
+lib32-libnghttp3
 lib32-libnl
 lib32-libpcap
 lib32-libpciaccess
@@ -738,6 +741,7 @@ ranger
 raptor
 rasqal
 rav1e
+re2
 readline
 redland
 ripgrep
