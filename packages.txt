@@ -64,7 +64,6 @@ coreutils
 cryptsetup
 curl
 dav1d
-db
 db5.3
 dbus
 dbus-broker
@@ -354,6 +353,7 @@ libevdev
 libevent
 libexif
 libexttextcat
+libfabric
 libfdk-aac
 libffi
 libfilezilla
@@ -414,7 +414,6 @@ libnfs
 libnftnl
 libnghttp2
 libnghttp3
-libngtcp2
 libnice
 libnl
 libnm
@@ -596,16 +595,13 @@ neon
 neovim
 nettle
 networkmanager
-node-gyp
-nodejs
-nodejs-nopt
 noto-fonts
 noto-fonts-cjk
 noto-fonts-emoji
-npm
 npth
 nspr
 nss
+numactl
 obsidian
 ocl-icd
 oniguruma
@@ -690,6 +686,7 @@ popt
 portaudio
 procps-ng
 protobuf
+prrte
 psmisc
 python
 python-attrs
@@ -754,7 +751,6 @@ sddm-sugar-dark
 sdl12-compat
 sdl2
 sed
-semver
 sequoia-sqv
 serd
 shaderc

@@ -29,7 +29,7 @@ mv_dots(){
 }
 
 install_packages(){
-    yay -S $(< minimal_pp.txt)
+    yay -S $(< packages.txt)
 }
 
 rm_self(){
