@@ -44,7 +44,7 @@ The rest of the keybinds you can find or change in the sxhkdrc config file.
 ### Apps
 
 | Action | Hotkey |
-| --- | --- |
+| --- | :---: |
 | Close the app | ``Super + Q`` |
 | Terminate the process | ``Super + Shift + Q`` |
 | Terminal | ``Super + Return`` or ``Alt + K`` |
