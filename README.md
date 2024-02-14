@@ -33,8 +33,64 @@ It looks like this:
 | Login manager | [sddm](https://github.com/sddm/sddm) |
 | Reader | [zathura](https://github.com/pwmt/zathura) with [poppler](https://github.com/pwmt/zathura-pdf-poppler) backend |
 | AUR Helper | [yay](https://github.com/Jguer/yay) |
+| System monitor | [btop](https://github.com/aristocratos/btop) |
 
 ---
+
+## Main keybindigs
+
+The rest of the keybinds you can find or change in the sxhkdrc config file.
+
+### Apps
+
+| Action | Hotkey |
+| --- | --- |
+| Close the app | ``Super + Q`` |
+| Terminate the process | ``Super + Shift + Q`` |
+| Terminal | ``Super + Return`` or ``Alt + K`` |
+| Browser | ``Alt + B`` | 
+| Code editor | ``Alt + G`` |
+| File manager | ``Alt + I`` |
+| Volume controller | ``Alt + P`` |
+| Messanger | ``Alt + T`` |
+| Music player (Spotify) | ``Alt + Q`` |
+| Reader | ``Alt + R`` |
+| Notes | ``Alt + O`` |
+
+### Miscellaneous
+
+| Action | Hotkey |
+| --- | :---: |
+| Switch workspaces | ``Super + 1-6`` |
+| App launcher | ``Super + Space`` |
+| Reload hotkey daemon | ``Super + Esc`` |
+| Random wallpaper | ``Super + Alt + W`` |
+| Restart window manager | ``Super + Alt + R`` |
+| Select theme | ``Alt + Space`` |
+
+### Window rules
+
+| Action | Hotkey |
+| --- | :---: |
+| Rotate windows | ``Super + R`` |
+| Switch windows | ``Super + C`` |
+| Split equally | ``Super + Equal`` |
+| Switch layout to monocle | ``Super + M`` |
+| Swap the biggest window | ``Super + G`` |
+| Floating mode | ``Super + S`` |
+| Fullscreen mode | ``Super + F`` |
+| Tiled mode | ``Super + T`` |
+| Preselect the window based on direction | ``Super + Left, Down, Up, Right`` |
+| Preelect the window based on ratio | ``Super + Ctrl + 1-9`` |
+
+### Session
+
+| Action | Hotkey |
+| --- | :---: |
+| Reboot | ``Ctrl + Super + Alt + R `` |
+| Poweroff | ``Ctrl + Super + Alt + P `` |
+| Sleep | ``Ctrl + Super + Alt + S `` |
+| Quit | ``Ctrl + Super + Alt + Q `` |
 
 ## Todo
 
