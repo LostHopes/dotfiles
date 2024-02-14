@@ -1,5 +1,20 @@
 # My dotfiles
 
+The main apps listed below will be available in regular Arch Linux repositories.
+Except aur helper, which you should clone from the git. That's pretty much it.
+
+## My current workflow 
+
+My workflow uses the gruvbox theme. 
+I might add a few more themes in the future.
+It looks like this:
+
+![My workflow](screenshots/layout.png)
+
+---
+
+## The most important apps
+
 | Component | Package |
 | :--- | :---: |
 | Compositor | [picom](https://github.com/yshui/picom) |
@@ -16,7 +31,16 @@
 | Audio visualizer | [cava](https://github.com/karlstav/cava) |
 | System fetcher | [neofetch](https://github.com/dylanaraps/neofetch) |
 | Login manager | [sddm](https://github.com/sddm/sddm) |
-| Reader | [zathura](https://github.com/pwmt/zathura) |
+| Reader | [zathura](https://github.com/pwmt/zathura) with [poppler](https://github.com/pwmt/zathura-pdf-poppler) backend |
+| AUR Helper | [yay](https://github.com/Jguer/yay) |
+
+---
+
+## Todo
+
+- [ ] Fix the install script
+- [ ] Migrate to the wayland
+- [ ] Add more polybar themes
 
 
 
