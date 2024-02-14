@@ -34,6 +34,7 @@ It looks like this:
 | Reader | [zathura](https://github.com/pwmt/zathura) with [poppler](https://github.com/pwmt/zathura-pdf-poppler) backend |
 | AUR Helper | [yay](https://github.com/Jguer/yay) |
 | System monitor | [btop](https://github.com/aristocratos/btop) |
+| Notification daemon | [dunst](https://github.com/dunst-project/dunst) |
 
 ---
 
