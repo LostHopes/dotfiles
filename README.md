@@ -40,7 +40,7 @@ It looks like this:
 
 - [ ] Fix the install script
 - [ ] Migrate to the wayland
-- [ ] Add more polybar themes
+- [ ] Add more themes
 
 
 
