@@ -14,9 +14,10 @@ setopt PROMPT_SUBST
 #PROMPT='%B%F{blue}󰣇%f%b  %B%F{magenta}%n%f%b %B%F{red}%~%f%b%B%F{yellow}$(git_prompt)%f%b %(?.%B%F{green}✓.%F{red}✕)%f%b %B%F{green}%f%b '
 PROMPT='%B%F{green}󰣇%f%b  %B%F{#FE8019}%n%f%b %B%F{red}%~%f%b%B%F{yellow}$(git_prompt)%f%b %(?.%B%F{green}✓.%F{red}✕)%f%b %B%F{green}%f%b '
 
-#export BROWSER=vivaldi-stable;
+export BROWSER=vivaldi-stable;
 export VISUAL=code;
 export EDITOR=nvim;
+export MANPAGER="nvim +Man!"
 export HISTORY_IGNORE="(ls|cd|pwd|exit|sudo reboot|history|cd -|cd ..)"
 
 if [ -d "$HOME/.local/bin" ] ;
