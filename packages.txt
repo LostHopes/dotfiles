@@ -99,7 +99,6 @@ ffmpeg
 fftw
 file
 filesystem
-filezilla
 findutils
 flac
 flameshot
@@ -209,6 +208,7 @@ lame
 lcms2
 ldns
 less
+lftp
 lib32-acl
 lib32-alsa-lib
 lib32-alsa-plugins
@@ -838,8 +838,6 @@ wmctrl
 woff2
 wpa_supplicant
 wpebackend-fdo
-wxwidgets-common
-wxwidgets-gtk3
 x264
 x265
 xbitmaps
