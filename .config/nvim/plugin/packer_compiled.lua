@@ -85,10 +85,10 @@ _G.packer_plugins = {
     path = "/home/losthope/.local/share/nvim/site/pack/packer/start/clangd_extensions.nvim",
     url = "https://github.com/p00f/clangd_extensions.nvim"
   },
-  ["coc.nvim"] = {
+  ["formatter.nvim"] = {
     loaded = true,
-    path = "/home/losthope/.local/share/nvim/site/pack/packer/start/coc.nvim",
-    url = "https://github.com/neoclide/coc.nvim"
+    path = "/home/losthope/.local/share/nvim/site/pack/packer/start/formatter.nvim",
+    url = "https://github.com/mhartington/formatter.nvim"
   },
   ["gitsigns.nvim"] = {
     loaded = true,
@@ -105,16 +105,15 @@ _G.packer_plugins = {
     path = "/home/losthope/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
   },
-  ["neovim-project"] = {
-    config = { "\27LJ\2\nM\0\0\4\0\5\0\b6\0\0\0009\0\1\0009\0\2\0\18\2\0\0009\0\3\0'\3\4\0B\0\3\1K\0\1\0\fglobals\vappend\19sessionoptions\bopt\bvim\0" },
+  ["mason-lspconfig.nvim"] = {
     loaded = true,
-    path = "/home/losthope/.local/share/nvim/site/pack/packer/start/neovim-project",
-    url = "https://github.com/coffebar/neovim-project"
+    path = "/home/losthope/.local/share/nvim/site/pack/packer/start/mason-lspconfig.nvim",
+    url = "https://github.com/williamboman/mason-lspconfig.nvim"
   },
-  ["neovim-session-manager"] = {
+  ["mason.nvim"] = {
     loaded = true,
-    path = "/home/losthope/.local/share/nvim/site/pack/packer/start/neovim-session-manager",
-    url = "https://github.com/Shatur/neovim-session-manager"
+    path = "/home/losthope/.local/share/nvim/site/pack/packer/start/mason.nvim",
+    url = "https://github.com/williamboman/mason.nvim"
   },
   ["nvim-autopairs"] = {
     loaded = true,
@@ -126,10 +125,20 @@ _G.packer_plugins = {
     path = "/home/losthope/.local/share/nvim/site/pack/packer/start/nvim-colorizer.lua",
     url = "https://github.com/norcalli/nvim-colorizer.lua"
   },
-  ["nvim-scrollbar"] = {
+  ["nvim-dap"] = {
     loaded = true,
-    path = "/home/losthope/.local/share/nvim/site/pack/packer/start/nvim-scrollbar",
-    url = "https://github.com/petertriho/nvim-scrollbar"
+    path = "/home/losthope/.local/share/nvim/site/pack/packer/start/nvim-dap",
+    url = "https://github.com/mfussenegger/nvim-dap"
+  },
+  ["nvim-lint"] = {
+    loaded = true,
+    path = "/home/losthope/.local/share/nvim/site/pack/packer/start/nvim-lint",
+    url = "https://github.com/mfussenegger/nvim-lint"
+  },
+  ["nvim-lspconfig"] = {
+    loaded = true,
+    path = "/home/losthope/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
+    url = "https://github.com/neovim/nvim-lspconfig"
   },
   ["nvim-tree.lua"] = {
     loaded = true,
@@ -162,16 +171,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/losthope/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
-  },
-  ["plenary.nvim"] = {
-    loaded = true,
-    path = "/home/losthope/.local/share/nvim/site/pack/packer/start/plenary.nvim",
-    url = "https://github.com/nvim-lua/plenary.nvim"
-  },
-  ["telescope.nvim"] = {
-    loaded = true,
-    path = "/home/losthope/.local/share/nvim/site/pack/packer/start/telescope.nvim",
-    url = "https://github.com/nvim-telescope/telescope.nvim"
   }
 }
 
@@ -180,10 +179,6 @@ time([[Defining packer_plugins]], false)
 time([[Config for Comment.nvim]], true)
 try_loadstring("\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\fComment\frequire\0", "config", "Comment.nvim")
 time([[Config for Comment.nvim]], false)
--- Config for: neovim-project
-time([[Config for neovim-project]], true)
-try_loadstring("\27LJ\2\nM\0\0\4\0\5\0\b6\0\0\0009\0\1\0009\0\2\0\18\2\0\0009\0\3\0'\3\4\0B\0\3\1K\0\1\0\fglobals\vappend\19sessionoptions\bopt\bvim\0", "config", "neovim-project")
-time([[Config for neovim-project]], false)
 -- Load plugins in order defined by `after`
 time([[Sequenced loading]], true)
 vim.cmd [[ packadd nvim-treesitter ]]

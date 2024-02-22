@@ -68,27 +68,16 @@ use { "windwp/nvim-ts-autotag", after = "nvim-treesitter" } -- autoclose tags
 -- gruvbox theme
 use("ellisonleao/gruvbox.nvim")
 
--- scrollbar
-use("petertriho/nvim-scrollbar")
-
---project manager
-
-use({
-  "coffebar/neovim-project",
-  config = function()
-    -- enable saving the state of plugins in the session
-    vim.opt.sessionoptions:append("globals") -- save global variables that start with an uppercase letter and contain at least one lowercase letter.
-  end,
-  requires = {
-    { "nvim-lua/plenary.nvim" },
-    { "nvim-telescope/telescope.nvim"},
-    { "Shatur/neovim-session-manager" },
-  }
-})
-
 -- autocompletion
 
-use{"neoclide/coc.nvim", branch="release"}
+use {
+    "williamboman/mason.nvim",
+    "williamboman/mason-lspconfig.nvim",
+    "neovim/nvim-lspconfig",
+    "mfussenegger/nvim-dap", 
+    "mfussenegger/nvim-lint",
+    "mhartington/formatter.nvim"
+}
 
 -- comments
 
