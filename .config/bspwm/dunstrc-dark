@@ -1,14 +1,10 @@
-# - z0mbi3
-# - https://github.com/gh0stzk/dotfiles
-# - z0mbi3.zk@protonmail.com
-
 [global]
 title = Dunst
 class = Dunst
 monitor = 0
 follow = mouse
 width = 300
-height = 300
+height = 600
 origin = top-right
 offset = 10x92
 indicate_hidden = yes
@@ -19,14 +15,17 @@ separator_height = 2
 padding = 8
 horizontal_padding = 11
 frame_width = 6
-frame_color = "#14171c"
-separator_color = "#404859"
+#frame_color = "#14171c"
+frame_color = "#282828"
+#separator_color = "#404859"
+separator_color = "#d79921"
 
 font = JetBrainsMono Nerd Font Mono Medium 9
 
 line_height = 0
 markup = full
-format = "<span size='x-large' font_desc='Cantarell 9' weight='bold' foreground='#f9f9f9'>%s</span>\n%b"
+#format = "<span size='x-large' font_desc='Cantarell 9' weight='bold' foreground='#f9f9f9'>%s</span>\n%b"
+format = "<span size='x-large' font_desc='Cantarell 9' weight='bold' foreground='#14171c'>%s</span>\n%b"
 alignment = center
 
 idle_threshold = 120
@@ -56,14 +55,14 @@ mouse_right_click = close_all
 [urgency_low]
 timeout = 3
 background = "#14171c"
-foreground = "#f9f9f9"
+foreground = "#98971a"
 
 [urgency_normal]
 timeout = 6
 background = "#14171c"
-foreground = "#f9f9f9"
+foreground = "#98971a"
 
 [urgency_critical]
 timeout = 0
 background = "#14171c"
-foreground = "#f9f9f9"
+foreground = "#98971a"
