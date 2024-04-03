@@ -73,6 +73,7 @@ efibootmgr
 efivar
 electron27
 electron28
+exfat-utils
 expat
 faad2
 fakeroot
@@ -94,6 +95,7 @@ freetype2
 fribidi
 fuse-common
 fuse2
+fuse3
 fzf
 gawk
 gc
@@ -112,7 +114,6 @@ glib-networking
 glib2
 glibc
 glibmm
-glibmm-2.68
 glslang
 glu
 gmp
@@ -211,13 +212,11 @@ lib32-libssh2
 lib32-libtasn1
 lib32-libtirpc
 lib32-libunistring
-lib32-libunwind
 lib32-libx11
 lib32-libxau
 lib32-libxcb
 lib32-libxcrypt
 lib32-libxcrypt-compat
-lib32-libxdamage
 lib32-libxdmcp
 lib32-libxext
 lib32-libxfixes
@@ -298,6 +297,7 @@ libdvdnav
 libdvdread
 libe-book
 libedit
+libei
 libelf
 libepoxy
 libepubgen
@@ -421,7 +421,6 @@ libunwind
 libupnp
 liburing
 libusb
-libutempter
 libuv
 libva
 libva-mesa-driver
@@ -652,9 +651,16 @@ tor-browser-bin
 tpm2-tss
 tracker3
 tree-sitter
+tree-sitter-bash
+tree-sitter-c
+tree-sitter-lua
+tree-sitter-markdown
+tree-sitter-python
+tree-sitter-query
+tree-sitter-vimdoc
 tslib
 ttf-jetbrains-mono-nerd
-ttf-opensans
+ttf-times-new-roman
 twolame
 tzdata
 uchardet
