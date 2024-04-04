@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
-SDIR="$HOME/.config/polybar/scripts"
+RICEDIR="$HOME/.config/bspwm/rices/gruvbox"
+SDIR="$RICEDIR/polybar/scripts"
 
 # Launch Rofi
 MENU="$(rofi -no-config -no-lazy-grab -sep "|" -dmenu -i -p '' \
