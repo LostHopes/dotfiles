@@ -71,7 +71,6 @@ dunst
 e2fsprogs
 efibootmgr
 efivar
-electron27
 electron28
 exfat-utils
 expat
@@ -103,6 +102,8 @@ gcc
 gcc-libs
 gcr
 gcr-4
+gdb
+gdb-common
 gdbm
 gdk-pixbuf2
 gettext
@@ -254,7 +255,6 @@ libasyncns
 libatasmart
 libatomic_ops
 libavc1394
-libavif
 libayatana-appindicator
 libayatana-indicator
 libb2
@@ -473,7 +473,6 @@ libxtst
 libxv
 libxxf86vm
 libyaml
-libyuv
 libzmf
 licenses
 lilv
@@ -604,7 +603,6 @@ ranger
 raptor
 rasqal
 rav1e
-re2
 readline
 redland
 ripgrep
@@ -625,6 +623,7 @@ slang
 snappy
 sord
 sound-theme-freedesktop
+source-highlight
 speex
 speexdsp
 spicetify-cli
@@ -689,7 +688,6 @@ which
 wildmidi
 wireplumber
 wmctrl
-woff2
 wpa_supplicant
 x264
 x265
