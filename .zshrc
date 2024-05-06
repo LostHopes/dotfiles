@@ -112,8 +112,8 @@ extract () {
 alias mirrors="sudo reflector --verbose --latest 5 --country 'United States' --age 6 --sort rate --save /etc/pacman.d/mirrorlist"
 
 alias grub-update="sudo grub-mkconfig -o /boot/grub/grub.cfg"
-alias mantenimiento="yay -Sc && sudo pacman -Scc"
-alias purga="sudo pacman -Rns $(pacman -Qtdq) ; sudo fstrim -av"
+alias clean-cache="yay -Sc && sudo yay -Scc"
+alias purge-orphans="sudo pacman -Rns $(pacman -Qtdq) ; sudo fstrim -av"
 alias update="yay -Syu"
 
 alias vm-on="sudo systemctl start libvirtd.service"

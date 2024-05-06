@@ -1,6 +1,6 @@
 #!/bin/sh
 
-mv_dots(){
+dotfiles(){
 
     CONFIG_PATH=$(pwd)/.config
     LOCAL_PATH=$(pwd)/.local/share
@@ -28,22 +28,18 @@ mv_dots(){
     done
 }
 
-install_packages(){
-    yay -S $(< packages.txt)
+install(){
+    yay -S $(< packages.txt) --needed
 }
 
-rm_self(){
+clean(){
     echo -e "\nHere is files to delete" && ls -lah
     #rm -r $(pwd)
 }
 
-
 read -p "Do you really want to install dotfiles? (y/n):" install
 case $install in
-    [Yy]* ) mv_dots; break;;
+    [Yy]* ) dotfiles; break;;
     [Nn]* ) echo "Exiting..."; exit 1; break;;
     * ) echo "Please answer yes or no.";;
 esac
-
-rm_self
-install_packages
