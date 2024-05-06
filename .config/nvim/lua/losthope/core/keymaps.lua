@@ -1,6 +1,6 @@
 vim.g.mapleader = " "
 
-local keymap = vim.keymap -- haz las cosas facil..
+local keymap = vim.keymap 
 
 -- General Keymaps
 
@@ -14,6 +14,9 @@ keymap.set("n", "<leader>to", ":tabnew<CR>") -- open new tab
 keymap.set("n", "<leader>tx", ":tabclose<CR>") -- close current tab
 keymap.set("n", "<leader>tn", ":tabn<CR>") --  go to next tab
 keymap.set("n", "<leader>tp", ":tabp<CR>") --  go to previous tab
+
+-- Telescope
+keymap.set("n", "<leader>ff", ":Telescope find_files<CR>")
 
 -- nvim-tree
 keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>") -- toggle file explorer

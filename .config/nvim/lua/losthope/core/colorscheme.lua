@@ -4,13 +4,6 @@ if not status then
   return
 end
 
-require('onedark').setup {
-    style = 'darker',
-    transparent = true
-}
-
-require('onedark').load()
-
 -- setup must be called before loading the colorscheme
 -- Default options:
 require("gruvbox").setup({

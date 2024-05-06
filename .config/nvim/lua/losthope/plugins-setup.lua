@@ -41,11 +41,7 @@ use({
 })
 
 -- file explorer
-
 use("nvim-tree/nvim-tree.lua")
-
-use("navarasu/onedark.nvim")
-
 
 -- statusline
 use("nvim-lualine/lualine.nvim")
@@ -53,35 +49,20 @@ use("nvim-lualine/lualine.nvim")
 -- Colorizer
 use("norcalli/nvim-colorizer.lua")
 
--- C++
-use("p00f/clangd_extensions.nvim")
-
-
 -- auto closing
-use ('windwp/nvim-autopairs') -- autoclose parens, brackets, quotes, etc...
-use { "windwp/nvim-ts-autotag", after = "nvim-treesitter" } -- autoclose tags
+use('windwp/nvim-autopairs') -- autoclose parens, brackets, quotes, etc...
+use{ "windwp/nvim-ts-autotag", after = "nvim-treesitter" } -- autoclose tags
 
   -- git integration
-  use ('lewis6991/gitsigns.nvim') -- show line modifications on left hand side
+use('lewis6991/gitsigns.nvim') -- show line modifications on left hand side
 
 
 -- gruvbox theme
 use("ellisonleao/gruvbox.nvim")
 
--- autocompletion
-
-use {
-    "williamboman/mason.nvim",
-    "williamboman/mason-lspconfig.nvim",
-    "neovim/nvim-lspconfig",
-    "mfussenegger/nvim-dap", 
-    "mfussenegger/nvim-lint",
-    "mhartington/formatter.nvim"
-}
-
 -- comments
 
-use {
+use{
     'numToStr/Comment.nvim',
     config = function()
         require('Comment').setup()
@@ -90,6 +71,31 @@ use {
 
 -- vs code like dev icons
 use("nvim-tree/nvim-web-devicons")
+
+-- markdown
+use{
+    'MeanderingProgrammer/markdown.nvim',
+    name = 'render-markdown', -- Only needed if you have another plugin named markdown.nvim
+    dependencies = { 'nvim-treesitter/nvim-treesitter' },
+    config = function()
+        require('render-markdown').setup({})
+    end,
+}
+
+-- Telescope
+use {
+  'nvim-telescope/telescope.nvim', 
+  requires = { {'nvim-lua/plenary.nvim'} }
+}
+
+-- Linter, language server
+use{
+    "williamboman/mason.nvim",
+    requires = { 
+        "neovim/nvim-lspconfig",
+        "williamboman/mason-lspconfig.nvim"
+    }
+}
 
 if packer_bootstrap then
     require("packer").sync()
