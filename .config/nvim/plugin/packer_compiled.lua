@@ -80,13 +80,18 @@ _G.packer_plugins = {
     path = "/home/losthope/.local/share/nvim/site/pack/packer/start/Comment.nvim",
     url = "https://github.com/numToStr/Comment.nvim"
   },
-  ["dashboard-nvim"] = {
-    config = { "\27LJ\2\nJ\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\1\ntheme\nhyper\nsetup\14dashboard\frequire\0" },
+  ["ascii.nvim"] = {
+    loaded = true,
+    path = "/home/losthope/.local/share/nvim/site/pack/packer/start/ascii.nvim",
+    url = "https://github.com/MaximilianLloyd/ascii.nvim"
+  },
+  ["dashboard.nvim"] = {
+    config = { "\27LJ\2\n÷\2\0\0\a\0\v\0\0176\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0006\3\0\0'\5\4\0B\3\2\0029\3\5\3'\5\6\0'\6\a\0B\3\3\2=\3\b\0025\3\t\0=\3\n\2B\0\2\1K\0\1\0\16directories\1\5\0\0,~/Documents/University/coding/tech-blog+~/Documents/University/coding/dotfiles4~/Documents/University/coding/python/Flask-labs ~/Documents/notes/Interests\vheader\tdoom\vgaming\15get_random\nascii\1\0\3\16directories\0\vheader\0\ntheme\nhyper\nsetup\14dashboard\frequire\0" },
     loaded = false,
     needs_bufread = false,
     only_cond = false,
-    path = "/home/losthope/.local/share/nvim/site/pack/packer/opt/dashboard-nvim",
-    url = "https://github.com/nvimdev/dashboard-nvim"
+    path = "/home/losthope/.local/share/nvim/site/pack/packer/opt/dashboard.nvim",
+    url = "https://github.com/MeanderingProgrammer/dashboard.nvim"
   },
   ["gitsigns.nvim"] = {
     loaded = true,
@@ -118,6 +123,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/losthope/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
+  },
+  ["nui.nvim"] = {
+    loaded = true,
+    path = "/home/losthope/.local/share/nvim/site/pack/packer/start/nui.nvim",
+    url = "https://github.com/MunifTanjim/nui.nvim"
   },
   ["nvim-autopairs"] = {
     loaded = true,
@@ -196,7 +206,7 @@ vim.cmd [[augroup packer_load_aucmds]]
 vim.cmd [[au!]]
   -- Event lazy-loads
 time([[Defining lazy-load event autocommands]], true)
-vim.cmd [[au VimEnter * ++once lua require("packer.load")({'dashboard-nvim'}, { event = "VimEnter *" }, _G.packer_plugins)]]
+vim.cmd [[au VimEnter * ++once lua require("packer.load")({'dashboard.nvim'}, { event = "VimEnter *" }, _G.packer_plugins)]]
 time([[Defining lazy-load event autocommands]], false)
 vim.cmd("augroup END")
 

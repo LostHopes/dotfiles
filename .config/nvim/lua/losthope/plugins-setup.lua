@@ -100,14 +100,25 @@ use{
 -- startup page
 
 use {
-    'nvimdev/dashboard-nvim',
+    'MeanderingProgrammer/dashboard.nvim',
     event = 'VimEnter',
     config = function()
-    require('dashboard').setup {
+        require('dashboard').setup {
         theme = "hyper",
+        header = require('ascii').get_random("gaming", "doom"),
+        directories = {
+            '~/Documents/University/coding/tech-blog',
+            '~/Documents/University/coding/dotfiles',
+            '~/Documents/University/coding/python/Flask-labs',
+            '~/Documents/notes/Interests',
+        }
     }
     end,
-    requires = {'nvim-tree/nvim-web-devicons'}
+    requires = {
+        'nvim-tree/nvim-web-devicons',
+        {"MaximilianLloyd/ascii.nvim", requires = {'MunifTanjim/nui.nvim' }},
+        'MunifTanjim/nui.nvim',
+    }
 }
 
 -- Terminal integration
