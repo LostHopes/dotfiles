@@ -2,6 +2,7 @@ require("losthope.plugins-setup")
 require("losthope.core.options")
 require("losthope.core.keymaps")
 require("losthope.core.colorscheme")
+require("losthope.core.terminal")
 
 require("losthope.plugins.nvim-tree")
 require("losthope.plugins.lualine")

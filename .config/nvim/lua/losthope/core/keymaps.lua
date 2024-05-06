@@ -17,6 +17,10 @@ keymap.set("n", "<leader>tp", ":tabp<CR>") --  go to previous tab
 
 -- Telescope
 keymap.set("n", "<leader>ff", ":Telescope find_files<CR>")
+keymap.set("n", "<leader>fk", ":Telescope keymaps<CR>")
 
+-- Terminal
+
+keymap.set("n", "<leader>ot", ":ToggleTerm<CR>")
 -- nvim-tree
-keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>") -- toggle file explorer
+keymap.set("n", "<leader:>e", ":NvimTreeToggle<CR>") -- toggle file explorer

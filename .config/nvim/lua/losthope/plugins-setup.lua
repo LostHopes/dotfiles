@@ -82,19 +82,37 @@ use{
     end,
 }
 
--- Telescope
+-- Telescope (search files, etc)
 use {
   'nvim-telescope/telescope.nvim', 
   requires = { {'nvim-lua/plenary.nvim'} }
 }
 
--- Linter, language server
+-- Linter, language server, debugging
 use{
     "williamboman/mason.nvim",
     requires = { 
         "neovim/nvim-lspconfig",
         "williamboman/mason-lspconfig.nvim"
     }
+}
+
+-- startup page
+
+use {
+    'nvimdev/dashboard-nvim',
+    event = 'VimEnter',
+    config = function()
+    require('dashboard').setup {
+        theme = "hyper",
+    }
+    end,
+    requires = {'nvim-tree/nvim-web-devicons'}
+}
+
+-- Terminal integration
+use{
+    "akinsho/toggleterm.nvim"
 }
 
 if packer_bootstrap then
