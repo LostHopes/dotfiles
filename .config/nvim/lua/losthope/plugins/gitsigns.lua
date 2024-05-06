@@ -5,5 +5,4 @@ if not setup then
 end
 
 -- configure/enable gitsigns
-require('gitsigns').setup {
-}
+require('gitsigns').setup {}
