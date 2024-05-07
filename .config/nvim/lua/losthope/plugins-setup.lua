@@ -102,7 +102,6 @@ use{"hrsh7th/cmp-buffer"}
 use{"L3MON4D3/LuaSnip"}
 use{"hrsh7th/cmp-path"}
 use{"hrsh7th/cmp-cmdline"}
-use{"quangnguyen30192/cmp-nvim-ultisnips"}
 use{"dcampos/nvim-snippy"}
 use{"dcampos/cmp-snippy"}
 
@@ -133,9 +132,9 @@ use {
 }
 
 -- Terminal integration
-use{
-    "akinsho/toggleterm.nvim"
-}
+use{"akinsho/toggleterm.nvim"}
+
+use{"rcarriga/nvim-notify"}
 
 if packer_bootstrap then
     require("packer").sync()

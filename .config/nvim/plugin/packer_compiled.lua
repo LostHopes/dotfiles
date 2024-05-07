@@ -105,11 +105,6 @@ _G.packer_plugins = {
     path = "/home/losthope/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
   },
-  ["cmp-nvim-ultisnips"] = {
-    loaded = true,
-    path = "/home/losthope/.local/share/nvim/site/pack/packer/start/cmp-nvim-ultisnips",
-    url = "https://github.com/quangnguyen30192/cmp-nvim-ultisnips"
-  },
   ["cmp-path"] = {
     loaded = true,
     path = "/home/losthope/.local/share/nvim/site/pack/packer/start/cmp-path",
@@ -121,7 +116,7 @@ _G.packer_plugins = {
     url = "https://github.com/dcampos/cmp-snippy"
   },
   ["dashboard.nvim"] = {
-    config = { "\27LJ\2\nð\2\0\0\6\0\f\0\0176\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0006\3\0\0'\5\4\0B\3\2\0029\3\5\0039\3\6\0039\3\a\0039\3\b\3=\3\t\0025\3\n\0=\3\v\2B\0\2\1K\0\1\0\16directories\1\5\0\0,~/Documents/University/coding/tech-blog+~/Documents/University/coding/dotfiles4~/Documents/University/coding/python/Flask-labs ~/Documents/notes/Interests\vheader\nsharp\vneovim\ttext\bart\nascii\1\0\4\16date_format\19%d %B %Y %H:%M\ntheme\nhyper\16directories\0\vheader\0\nsetup\14dashboard\frequire\0" },
+    config = { "\27LJ\2\nð\2\0\0\6\0\f\0\0176\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0006\3\0\0'\5\4\0B\3\2\0029\3\5\0039\3\6\0039\3\a\0039\3\b\3=\3\t\0025\3\n\0=\3\v\2B\0\2\1K\0\1\0\16directories\1\5\0\0,~/Documents/University/coding/tech-blog+~/Documents/University/coding/dotfiles4~/Documents/University/coding/python/Flask-labs ~/Documents/notes/Interests\vheader\nsharp\vneovim\ttext\bart\nascii\1\0\4\16date_format\19%d %B %Y %H:%M\vheader\0\16directories\0\ntheme\nhyper\nsetup\14dashboard\frequire\0" },
     loaded = false,
     needs_bufread = false,
     only_cond = false,
@@ -184,6 +179,11 @@ _G.packer_plugins = {
     path = "/home/losthope/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
   },
+  ["nvim-notify"] = {
+    loaded = true,
+    path = "/home/losthope/.local/share/nvim/site/pack/packer/start/nvim-notify",
+    url = "https://github.com/rcarriga/nvim-notify"
+  },
   ["nvim-snippy"] = {
     loaded = true,
     path = "/home/losthope/.local/share/nvim/site/pack/packer/start/nvim-snippy",
@@ -234,14 +234,14 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: markdown.nvim
-time([[Config for markdown.nvim]], true)
-try_loadstring("\27LJ\2\nA\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\20render-markdown\frequire\0", "config", "markdown.nvim")
-time([[Config for markdown.nvim]], false)
 -- Config for: Comment.nvim
 time([[Config for Comment.nvim]], true)
 try_loadstring("\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\fComment\frequire\0", "config", "Comment.nvim")
 time([[Config for Comment.nvim]], false)
+-- Config for: markdown.nvim
+time([[Config for markdown.nvim]], true)
+try_loadstring("\27LJ\2\nA\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\20render-markdown\frequire\0", "config", "markdown.nvim")
+time([[Config for markdown.nvim]], false)
 -- Load plugins in order defined by `after`
 time([[Sequenced loading]], true)
 vim.cmd [[ packadd nvim-treesitter ]]

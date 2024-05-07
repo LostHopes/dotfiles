@@ -23,4 +23,4 @@ keymap.set("n", "<leader>fk", ":Telescope keymaps<CR>")
 
 keymap.set("n", "<leader>ot", ":ToggleTerm<CR>")
 -- nvim-tree
-keymap.set("n", "<leader:>e", ":NvimTreeToggle<CR>") -- toggle file explorer
+keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>") -- toggle file explorer
