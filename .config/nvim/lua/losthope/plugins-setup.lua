@@ -53,9 +53,8 @@ use("norcalli/nvim-colorizer.lua")
 use('windwp/nvim-autopairs') -- autoclose parens, brackets, quotes, etc...
 use{ "windwp/nvim-ts-autotag", after = "nvim-treesitter" } -- autoclose tags
 
-  -- git integration
+  -- git integrationn and lazygit
 use('lewis6991/gitsigns.nvim') -- show line modifications on left hand side
-
 
 -- gruvbox theme
 use("ellisonleao/gruvbox.nvim")
@@ -104,7 +103,6 @@ use{"hrsh7th/cmp-path"}
 use{"hrsh7th/cmp-cmdline"}
 use{"dcampos/nvim-snippy"}
 use{"dcampos/cmp-snippy"}
-
 
 -- startup page
 

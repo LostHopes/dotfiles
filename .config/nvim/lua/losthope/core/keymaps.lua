@@ -15,9 +15,13 @@ keymap.set("n", "<leader>tx", ":tabclose<CR>") -- close current tab
 keymap.set("n", "<leader>tn", ":tabn<CR>") --  go to next tab
 keymap.set("n", "<leader>tp", ":tabp<CR>") --  go to previous tab
 
+keymap.set("n", "<leader>bn", ":bnext<CR>") -- next buffer
+keymap.set("n", "<leader>bp", ":bprevious<CR>") -- previous buffer
+keymap.set("n", "<leader>bd", ":bdelete<CR>") -- delete buffer
+
 -- Telescope
-keymap.set("n", "<leader>ff", ":Telescope find_files<CR>")
-keymap.set("n", "<leader>fk", ":Telescope keymaps<CR>")
+keymap.set("n", "<leader>ff", ":Telescope find_files<CR>") -- find files 
+keymap.set("n", "<leader>fk", ":Telescope keymaps<CR>") -- see keybindigs
 
 -- Terminal
 
