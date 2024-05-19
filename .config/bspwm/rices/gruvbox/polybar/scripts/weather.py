@@ -13,8 +13,8 @@ import requests
 import json
 
 # Settings
-city = "Ivano-Frankivsk" # Your town
-api_key = "be7a8d2dc78596541bb13a9cb0e70276" # Your openweather api key
+city = "" # Your town
+api_key = "" # Your openweather api key
 units = "metric" # Unit system {imperial or metric}
 temperature_unit = "C" # Units of measurement. That will be showed in UI. Does not affect on API.
 
