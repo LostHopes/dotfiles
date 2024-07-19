@@ -22,6 +22,7 @@ keymap.set("n", "<leader>bd", ":bdelete<CR>") -- delete buffer
 -- Telescope
 keymap.set("n", "<leader>ff", ":Telescope find_files<CR>") -- find files 
 keymap.set("n", "<leader>fk", ":Telescope keymaps<CR>") -- see keybindigs
+keymap.set("n", "<leader>fm", ":Telescope man_pages<CR>") -- see man pages
 
 -- Terminal
 
