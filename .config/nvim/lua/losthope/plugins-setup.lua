@@ -119,6 +119,7 @@ use {
             '~/Documents/University/coding/dotfiles',
             '~/Documents/University/coding/python/Flask-labs',
             '~/Documents/notes/Interests',
+            '~/Documents/University/coding/C/utils'
         }
     }
     end,

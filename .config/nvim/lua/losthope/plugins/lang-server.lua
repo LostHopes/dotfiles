@@ -91,3 +91,7 @@ require("lspconfig")["cssls"].setup{
 require("lspconfig")["pyright"].setup{
     capabilities = capabilities
 }
+
+require("lspconfig")["clangd"].setup{
+    capabilities = capabilities
+}
