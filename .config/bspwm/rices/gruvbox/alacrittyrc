@@ -62,7 +62,7 @@ decorations = "none"
 dynamic_title = true
 #history = 10000
 #multiplier = 3
-opacity = 0.8
+opacity = 1.0 # 0.8 - transparent
 
 [window.padding]
 x = 10
