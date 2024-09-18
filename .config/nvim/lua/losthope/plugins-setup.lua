@@ -26,6 +26,7 @@ if not status then
   return
 end
 
+
 -- add list of plugins to install
 return packer.startup(function(use)
   -- packer can manage itself
@@ -50,8 +51,8 @@ use("nvim-lualine/lualine.nvim")
 use("norcalli/nvim-colorizer.lua")
 
 -- auto closing
-use('windwp/nvim-autopairs') -- autoclose parens, brackets, quotes, etc...
-use{ "windwp/nvim-ts-autotag", after = "nvim-treesitter" } -- autoclose tags
+use{'windwp/nvim-autopairs'} -- autoclose parens, brackets, quotes, etc...
+use{"windwp/nvim-ts-autotag", after = "nvim-treesitter"} -- autoclose tags
 
   -- git integrationn and lazygit
 use('lewis6991/gitsigns.nvim') -- show line modifications on left hand side
@@ -87,7 +88,7 @@ use {
   requires = { {'nvim-lua/plenary.nvim'} }
 }
 
--- Linter, language server, debugging
+-- Linter, language server, debugging, formatter
 use{
     "williamboman/mason.nvim",
     requires = { 
@@ -95,6 +96,8 @@ use{
         "williamboman/mason-lspconfig.nvim"
     }
 }
+
+use{"stevearc/conform.nvim"}
 use{"hrsh7th/nvim-cmp"}
 use{"hrsh7th/cmp-nvim-lsp"}
 use{"hrsh7th/cmp-buffer"}
@@ -134,6 +137,14 @@ use {
 use{"akinsho/toggleterm.nvim"}
 
 use{"rcarriga/nvim-notify"}
+
+-- For LaTeX
+use{
+    "lervag/vimtex",
+    requires = {
+        {"micangl/cmp-vimtex"}
+    }
+}
 
 if packer_bootstrap then
     require("packer").sync()
