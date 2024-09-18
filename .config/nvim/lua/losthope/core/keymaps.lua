@@ -25,7 +25,9 @@ keymap.set("n", "<leader>fk", ":Telescope keymaps<CR>") -- see keybindigs
 keymap.set("n", "<leader>fm", ":Telescope man_pages<CR>") -- see man pages
 
 -- Terminal
-
 keymap.set("n", "<leader>ot", ":ToggleTerm<CR>")
+keymap.set("n", "<leader>lg", ":LazyGit<CR>")
+
 -- nvim-tree
 keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>") -- toggle file explorer
+

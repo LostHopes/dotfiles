@@ -56,6 +56,13 @@ use{"windwp/nvim-ts-autotag", after = "nvim-treesitter"} -- autoclose tags
 
   -- git integrationn and lazygit
 use('lewis6991/gitsigns.nvim') -- show line modifications on left hand side
+use({
+    "kdheepak/lazygit.nvim",
+    -- optional for floating window border decoration
+    requires = {
+        "nvim-lua/plenary.nvim",
+    },
+})
 
 -- gruvbox theme
 use("ellisonleao/gruvbox.nvim")
