@@ -1,13 +1,13 @@
 -- auto install packer if not installed
 local ensure_packer = function()
-  local fn = vim.fn
-  local install_path = fn.stdpath("data") .. "/site/pack/packer/start/packer.nvim"
-  if fn.empty(fn.glob(install_path)) > 0 then
-    fn.system({ "git", "clone", "--depth", "1", "https://github.com/wbthomason/packer.nvim", install_path })
-    vim.cmd([[packadd packer.nvim]])
-    return true
-  end
-  return false
+	local fn = vim.fn
+	local install_path = fn.stdpath("data") .. "/site/pack/packer/start/packer.nvim"
+	if fn.empty(fn.glob(install_path)) > 0 then
+		fn.system({ "git", "clone", "--depth", "1", "https://github.com/wbthomason/packer.nvim", install_path })
+		vim.cmd([[packadd packer.nvim]])
+		return true
+	end
+	return false
 end
 local packer_bootstrap = ensure_packer() -- true if packer was just installed
 
@@ -23,137 +23,135 @@ vim.cmd([[
 -- import packer safely
 local status, packer = pcall(require, "packer")
 if not status then
-  return
+	return
 end
-
 
 -- add list of plugins to install
 return packer.startup(function(use)
-  -- packer can manage itself
-use("wbthomason/packer.nvim")
+	-- packer can manage itself
+	use("wbthomason/packer.nvim")
 
-   -- treesitter configuration
-use({
-    "nvim-treesitter/nvim-treesitter",
-    run = function()
-      local ts_update = require("nvim-treesitter.install").update({ with_sync = true })
-      ts_update()
-    end,
-})
+	-- treesitter configuration
+	use({
+		"nvim-treesitter/nvim-treesitter",
+		run = function()
+			local ts_update = require("nvim-treesitter.install").update({ with_sync = true })
+			ts_update()
+		end,
+	})
 
--- file explorer
-use("nvim-tree/nvim-tree.lua")
+	-- file explorer
+	use("nvim-tree/nvim-tree.lua")
 
--- statusline
-use("nvim-lualine/lualine.nvim")
+	-- statusline
+	use("nvim-lualine/lualine.nvim")
 
--- Colorizer
-use("norcalli/nvim-colorizer.lua")
+	-- Colorizer
+	use("norcalli/nvim-colorizer.lua")
 
--- auto closing
-use{'windwp/nvim-autopairs'} -- autoclose parens, brackets, quotes, etc...
-use{"windwp/nvim-ts-autotag", after = "nvim-treesitter"} -- autoclose tags
+	-- auto closing
+	use({ "windwp/nvim-autopairs" }) -- autoclose parens, brackets, quotes, etc...
+	use({ "windwp/nvim-ts-autotag", after = "nvim-treesitter" }) -- autoclose tags
 
-  -- git integrationn and lazygit
-use('lewis6991/gitsigns.nvim') -- show line modifications on left hand side
-use({
-    "kdheepak/lazygit.nvim",
-    -- optional for floating window border decoration
-    requires = {
-        "nvim-lua/plenary.nvim",
-    },
-})
+	-- git integrationn and lazygit
+	use("lewis6991/gitsigns.nvim") -- show line modifications on left hand side
+	use({
+		"kdheepak/lazygit.nvim",
+		-- optional for floating window border decoration
+		requires = {
+			"nvim-lua/plenary.nvim",
+		},
+	})
 
--- gruvbox theme
-use("ellisonleao/gruvbox.nvim")
+	-- gruvbox theme
+	use("ellisonleao/gruvbox.nvim")
 
--- comments
+	-- comments
 
-use{
-    'numToStr/Comment.nvim',
-    config = function()
-        require('Comment').setup()
-    end
-}
+	use({
+		"numToStr/Comment.nvim",
+		config = function()
+			require("Comment").setup()
+		end,
+	})
 
--- vs code like dev icons
-use("nvim-tree/nvim-web-devicons")
+	-- vs code like dev icons
+	use("nvim-tree/nvim-web-devicons")
 
--- markdown
-use{
-    'MeanderingProgrammer/markdown.nvim',
-    name = 'render-markdown', -- Only needed if you have another plugin named markdown.nvim
-    dependencies = { 'nvim-treesitter/nvim-treesitter' },
-    config = function()
-        require('render-markdown').setup({})
-    end,
-}
+	-- markdown
+	use({
+		"MeanderingProgrammer/markdown.nvim",
+		name = "render-markdown", -- Only needed if you have another plugin named markdown.nvim
+		dependencies = { "nvim-treesitter/nvim-treesitter" },
+		config = function()
+			require("render-markdown").setup({})
+		end,
+	})
 
--- Telescope (search files, etc)
-use {
-  'nvim-telescope/telescope.nvim', 
-  requires = { {'nvim-lua/plenary.nvim'} }
-}
+	-- Telescope (search files, etc)
+	use({
+		"nvim-telescope/telescope.nvim",
+		requires = { { "nvim-lua/plenary.nvim" } },
+	})
 
--- Linter, language server, debugging, formatter
-use{
-    "williamboman/mason.nvim",
-    requires = { 
-        "neovim/nvim-lspconfig",
-        "williamboman/mason-lspconfig.nvim"
-    }
-}
+	-- Linter, language server, debugging, formatter
+	use({
+		"williamboman/mason.nvim",
+		requires = {
+			"neovim/nvim-lspconfig",
+			"williamboman/mason-lspconfig.nvim",
+			"stevearc/conform.nvim",
+			"hrsh7th/nvim-cmp",
+			"hrsh7th/cmp-nvim-lsp",
+			"hrsh7th/cmp-buffer",
+			"L3MON4D3/LuaSnip",
+			"hrsh7th/cmp-path",
+			"hrsh7th/cmp-cmdline",
+			"dcampos/nvim-snippy",
+			"dcampos/cmp-snippy",
+		},
+	})
 
-use{"stevearc/conform.nvim"}
-use{"hrsh7th/nvim-cmp"}
-use{"hrsh7th/cmp-nvim-lsp"}
-use{"hrsh7th/cmp-buffer"}
-use{"L3MON4D3/LuaSnip"}
-use{"hrsh7th/cmp-path"}
-use{"hrsh7th/cmp-cmdline"}
-use{"dcampos/nvim-snippy"}
-use{"dcampos/cmp-snippy"}
+	-- startup page
+	use({
+		"MeanderingProgrammer/dashboard.nvim",
+		event = "VimEnter",
+		config = function()
+			require("dashboard").setup({
+				theme = "hyper",
+				header = require("ascii").art.text.neovim.sharp,
+				date_format = "%d %B %Y %H:%M",
+				directories = {
+					"~/Documents/University/coding/tech-blog",
+					"~/Documents/University/coding/dotfiles",
+					"~/Documents/University/coding/python/Flask-labs",
+					"~/Documents/notes/Interests",
+					"~/Documents/University/coding/C/utils",
+					"~/Documents/University/Other/Resume",
+				},
+			})
+		end,
+		requires = {
+			"nvim-tree/nvim-web-devicons",
+			{ "MaximilianLloyd/ascii.nvim", requires = { "MunifTanjim/nui.nvim" } },
+			"MunifTanjim/nui.nvim",
+		},
+	})
 
--- startup page
+	-- Terminal integration
+	use({ "akinsho/toggleterm.nvim" })
 
-use {
-    'MeanderingProgrammer/dashboard.nvim',
-    event = 'VimEnter',
-    config = function()
-        require('dashboard').setup {
-        theme = "hyper",
-        header = require('ascii').art.text.neovim.sharp,
-        date_format = "%d %B %Y %H:%M", 
-        directories = {
-            '~/Documents/University/coding/tech-blog',
-            '~/Documents/University/coding/dotfiles',
-            '~/Documents/University/coding/python/Flask-labs',
-            '~/Documents/notes/Interests',
-            '~/Documents/University/coding/C/utils'
-        }
-    }
-    end,
-    requires = {
-        'nvim-tree/nvim-web-devicons',
-        {"MaximilianLloyd/ascii.nvim", requires = {'MunifTanjim/nui.nvim' }},
-        'MunifTanjim/nui.nvim',
-    }
-}
+	-- use({ "rcarriga/nvim-notify" })
 
--- Terminal integration
-use{"akinsho/toggleterm.nvim"}
+	-- For LaTeX
+	use({
+		"lervag/vimtex",
+		requires = {
+			{ "micangl/cmp-vimtex" },
+		},
+	})
 
-use{"rcarriga/nvim-notify"}
-
--- For LaTeX
-use{
-    "lervag/vimtex",
-    requires = {
-        {"micangl/cmp-vimtex"}
-    }
-}
-
-if packer_bootstrap then
-    require("packer").sync()
-  end
+	if packer_bootstrap then
+		require("packer").sync()
+	end
 end)

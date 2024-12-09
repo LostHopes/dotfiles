@@ -1,8 +1,15 @@
 vim.g.vimtex_compiler_latexmk = {
-    executable = 'latexmk',
-    build_dir = '.out',
+	--executable = 'latexmk',
+	executable = "pdflatex",
+	build_dir = "pdf",
 }
 
-require("cmp_vimtex").setup({
+vim.g.vimtex_view_method = "zathura" -- Set PDF viewer
 
+require("cmp").setup({
+	sources = {
+		{ name = "vimtex" },
+	},
 })
+
+-- Enable syntax highlighting for Lua files
