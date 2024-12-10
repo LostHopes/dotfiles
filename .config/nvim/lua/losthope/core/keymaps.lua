@@ -1,6 +1,6 @@
 vim.g.mapleader = " "
 
-local keymap = vim.keymap 
+local keymap = vim.keymap
 
 -- General Keymaps
 
@@ -20,9 +20,10 @@ keymap.set("n", "<leader>bp", ":bprevious<CR>") -- previous buffer
 keymap.set("n", "<leader>bd", ":bdelete<CR>") -- delete buffer
 
 -- Telescope
-keymap.set("n", "<leader>ff", ":Telescope find_files<CR>") -- find files 
+keymap.set("n", "<leader>ff", ":Telescope find_files<CR>") -- find files
 keymap.set("n", "<leader>fk", ":Telescope keymaps<CR>") -- see keybindigs
 keymap.set("n", "<leader>fm", ":Telescope man_pages<CR>") -- see man pages
+keymap.set("n", "<leader>fp", ":Telescope projects<CR>") -- see opened projects
 
 -- Terminal
 keymap.set("n", "<leader>ot", ":ToggleTerm<CR>")
@@ -30,4 +31,3 @@ keymap.set("n", "<leader>lg", ":LazyGit<CR>")
 
 -- nvim-tree
 keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>") -- toggle file explorer
-

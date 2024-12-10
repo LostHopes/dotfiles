@@ -114,27 +114,90 @@ return packer.startup(function(use)
 
 	-- startup page
 	use({
-		"MeanderingProgrammer/dashboard.nvim",
+		"nvimdev/dashboard-nvim",
 		event = "VimEnter",
 		config = function()
-			require("dashboard").setup({
+			local dashboard = require("dashboard")
+			local icons = require("losthope.lib.icons")
+			local pwd = vim.fn.fnamemodify(vim.fn.getcwd(), ":t")
+
+			dashboard.setup({
 				theme = "hyper",
-				header = require("ascii").art.text.neovim.sharp,
-				date_format = "%d %B %Y %H:%M",
-				directories = {
-					"~/Documents/University/coding/tech-blog",
-					"~/Documents/University/coding/dotfiles",
-					"~/Documents/University/coding/python/Flask-labs",
-					"~/Documents/notes/Interests",
-					"~/Documents/University/coding/C/utils",
-					"~/Documents/University/Other/Resume",
+				disable_move = false,
+				shortcut_type = "letter",
+				change_to_vcs_root = true,
+				hide = {
+					statusline = true,
+					tabline = false,
+					winbar = false,
+				},
+				config = {
+					week_header = {
+						enable = true,
+						append = { "", icons.documents.OpenFolder .. pwd },
+					},
+					packages = { enable = true },
+					project = {
+						enable = false, -- Enable project listing
+						limit = 8, -- Limit number of projects shown
+						icon = "📁", -- Icon for projects
+						label = "Projects", -- Label for the section
+					},
+					mru = { -- Most Recently Used files
+						enable = true,
+						limit = 10,
+						icon = "📝",
+					},
+					shortcut = {
+						{
+							desc = icons.ui.Package .. "Mason",
+							group = "@property",
+							action = "Mason",
+							key = "m",
+						},
+						{
+							desc = icons.ui.Telescope .. "Files",
+							group = "Label",
+							action = "Telescope find_files",
+							key = "f",
+						},
+						{
+							desc = icons.ui.Project .. "Projects",
+							group = "Label",
+							action = "Telescope projects",
+							key = "p",
+						},
+						{
+							desc = icons.ui.Note .. "Todo",
+							group = "Label",
+							action = "Tdo",
+							key = "d",
+						},
+						{
+							desc = icons.ui.Power,
+							group = "Action",
+							action = "quit",
+							key = "q",
+						},
+					},
+					footer = { "", icons.ui.Heart .. " happiness is a state of mind " .. icons.ui.Heart },
 				},
 			})
+
+			-- Show dashboard when lazy closes
+			if vim.o.filetype == "lazy" then
+				vim.cmd.close()
+				vim.api.nvim_create_autocmd("User", {
+					pattern = "DashboardLoaded",
+					callback = function()
+						require("lazy").show()
+					end,
+				})
+			end
 		end,
 		requires = {
 			"nvim-tree/nvim-web-devicons",
-			{ "MaximilianLloyd/ascii.nvim", requires = { "MunifTanjim/nui.nvim" } },
-			"MunifTanjim/nui.nvim",
+			"ahmedkhalf/project.nvim",
 		},
 	})
 
