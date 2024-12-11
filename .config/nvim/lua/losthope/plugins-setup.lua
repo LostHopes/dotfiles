@@ -143,7 +143,7 @@ return packer.startup(function(use)
 						icon = "📁", -- Icon for projects
 						label = "Projects", -- Label for the section
 					},
-					mru = { -- Most Recently Used files
+					mru = {
 						enable = true,
 						limit = 10,
 						icon = "📝",
@@ -154,6 +154,12 @@ return packer.startup(function(use)
 							group = "@property",
 							action = "Mason",
 							key = "m",
+						},
+						{
+							desc = icons.ui.Package .. "Update",
+							group = "@property",
+							action = "PackerSync",
+							key = "u",
 						},
 						{
 							desc = icons.ui.Telescope .. "Files",
