@@ -31,3 +31,6 @@ keymap.set("n", "<leader>lg", ":LazyGit<CR>")
 
 -- nvim-tree
 keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>") -- toggle file explorer
+
+-- select python virtual environments
+keymap.set("n", "<leader>env", ":VenvSelect<CR>")

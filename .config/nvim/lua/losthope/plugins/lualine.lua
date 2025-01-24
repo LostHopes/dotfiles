@@ -5,7 +5,7 @@ if not status then
 end
 
 -- get lualine nightfly theme
-local lualine_onedark = require("lualine.themes.onedark")
+local lualine_onedark = require("lualine.themes.gruvbox")
 
 -- new colors for theme
 local new_colors = {

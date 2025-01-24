@@ -174,12 +174,6 @@ return packer.startup(function(use)
 							key = "p",
 						},
 						{
-							desc = icons.ui.Note .. "Todo",
-							group = "Label",
-							action = "Tdo",
-							key = "d",
-						},
-						{
 							desc = icons.ui.Power,
 							group = "Action",
 							action = "quit",
@@ -210,15 +204,13 @@ return packer.startup(function(use)
 	-- Terminal integration
 	use({ "akinsho/toggleterm.nvim" })
 
-	-- use({ "rcarriga/nvim-notify" })
-
 	-- For LaTeX
-	use({
-		"lervag/vimtex",
-		requires = {
-			{ "micangl/cmp-vimtex" },
-		},
-	})
+	-- use({
+	-- 	"lervag/vimtex",
+	-- 	requires = {
+	-- 		{ "micangl/cmp-vimtex" },
+	-- 	},
+	-- })
 
 	if packer_bootstrap then
 		require("packer").sync()
