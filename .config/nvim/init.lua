@@ -1,18 +1,37 @@
-require("losthope.plugins-setup")
-require("losthope.core.options")
-require("losthope.core.keymaps")
-require("losthope.core.colorscheme")
-require("losthope.core.terminal")
+vim.g.base46_cache = vim.fn.stdpath "data" .. "/base46/"
+vim.g.mapleader = " "
 
-require("losthope.lib.icons")
+-- bootstrap lazy and all plugins
+local lazypath = vim.fn.stdpath "data" .. "/lazy/lazy.nvim"
 
-require("losthope.plugins.lang-server")
-require("losthope.plugins.nvim-tree")
-require("losthope.plugins.lualine")
-require("losthope.plugins.colorizer")
-require("losthope.plugins.autopairs")
-require("losthope.plugins.gitsigns")
-require("losthope.plugins.treesitter")
-require("losthope.plugins.formatter")
-require("losthope.plugins.vimtex")
-require("losthope.plugins.project")
+if not vim.uv.fs_stat(lazypath) then
+  local repo = "https://github.com/folke/lazy.nvim.git"
+  vim.fn.system { "git", "clone", "--filter=blob:none", repo, "--branch=stable", lazypath }
+end
+
+vim.opt.rtp:prepend(lazypath)
+
+local lazy_config = require "configs.lazy"
+
+-- load plugins
+require("lazy").setup({
+  {
+    "NvChad/NvChad",
+    lazy = false,
+    branch = "v2.5",
+    import = "nvchad.plugins",
+  },
+
+  { import = "plugins" },
+}, lazy_config)
+
+-- load theme
+dofile(vim.g.base46_cache .. "defaults")
+dofile(vim.g.base46_cache .. "statusline")
+
+require "options"
+require "nvchad.autocmds"
+
+vim.schedule(function()
+  require "mappings"
+end)
