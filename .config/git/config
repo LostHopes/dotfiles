@@ -1,0 +1,17 @@
+[user]
+	email = arsen.melnuchyk@gmail.com
+	name = losthope
+[init]
+	defaultBranch = main
+[credential]
+	helper = store
+[core]
+	editor = nvim
+[diff]
+    tool = nvimdiff
+[difftool]
+    prompt = false
+[difftool "nvimdiff"]
+    cmd = "nvim -d \"$LOCAL\" \"$REMOTE\""
+[commit]
+	gpgsign = true
