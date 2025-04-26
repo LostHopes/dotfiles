@@ -129,7 +129,10 @@ case "${RICETHEME}" in
 
         #Default border
 		# SetBspwmConf "${BSPWM_BORDER}" 10 60 "#9bced7" "#9bced7" "#c3a5e6" "#c3a5e6" 5 5 "${BSPWM_GAP}"
-		SetBspwmConf "${BSPWM_BORDER}" 10 60 "#98971a" "#98971a" "#d65d0e" "#d65d0e" 5 5 "${BSPWM_GAP}"
+		# SetBspwmConf "${BSPWM_BORDER}" 10 60 "#98971a" "#98971a" "#d65d0e" "#d65d0e" 5 5 "${BSPWM_GAP}"
+
+    # For top bar
+		SetBspwmConf "${BSPWM_BORDER}" 10 10 "#98971a" "#98971a" "#d65d0e" "#d65d0e" 5 5 "${BSPWM_GAP}"
 
 		#killeww
 		
