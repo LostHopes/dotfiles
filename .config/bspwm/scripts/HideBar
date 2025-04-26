@@ -10,7 +10,8 @@ function hide() {
 		polybar-msg cmd hide | bspc config top_padding 5
 		
 	elif [[ "${RICETHEME}" == gruvbox ]]; then
-		polybar-msg cmd hide | bspc config bottom_padding 5
+		# polybar-msg cmd hide | bspc config bottom_padding 5
+		polybar-msg cmd hide | bspc config top_padding 5
 	else 
 		echo "Error: Something fails dud.."
 	fi
@@ -22,7 +23,10 @@ function unhide() {
 		polybar-msg cmd show | bspc config top_padding 60
 		
 	elif [[ "${RICETHEME}" == gruvbox ]]; then
-		polybar-msg cmd show | bspc config bottom_padding 60
+		# polybar-msg cmd show | bspc config bottom_padding 60
+
+    # for top bar
+		polybar-msg cmd show | bspc config top_padding 60
 		
 	else 
 		echo "Error: Something fails dud.."
