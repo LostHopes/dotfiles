@@ -15,17 +15,17 @@ super + Return
 super + alt + Return
 	Term --oft
 	
-# Apps (switch to okular if prefered)
+# Apps (switch to okular if prefered and code instead of nvim)
 alt + {b,g,i,m,p,k,t,q,r,o}
 	{vivaldi-stable, \
-    code, \
+  code, \
 	alacritty -e ranger, \
 	alacritty -e btop, \
 	pavucontrol, \
 	alacritty, \
 	telegram-desktop, \
 	spotify-launcher, \
-    zathura, \
+  zathura, \
 	obsidian, \
 	}
 
