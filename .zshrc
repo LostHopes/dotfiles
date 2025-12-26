@@ -9,7 +9,7 @@ git_prompt() {
 
     [ -n "${branch}" ] && echo "  ${branch}"
 }
-neofetch
+#neofetch
 setopt PROMPT_SUBST
 #PROMPT='%B%F{blue}󰣇%f%b  %B%F{magenta}%n%f%b %B%F{red}%~%f%b%B%F{yellow}$(git_prompt)%f%b %(?.%B%F{green}✓.%F{red}✕)%f%b %B%F{green}%f%b '
 PROMPT='%B%F{green}󰣇%f%b  %B%F{#FE8019}%n%f%b %B%F{red}%~%f%b%B%F{yellow}$(git_prompt)%f%b %(?.%B%F{green}✓.%F{red}✕)%f%b %B%F{green}%f%b '
@@ -121,5 +121,7 @@ alias vm-off="sudo systemctl stop libvirtd.service"
 
 alias ls='lsd -a --group-directories-first'
 alias ll='lsd -la --group-directories-first'
+
+export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
 
 #~/.local/bin/colorscript -r
