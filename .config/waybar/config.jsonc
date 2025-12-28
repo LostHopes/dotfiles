@@ -2,7 +2,7 @@
     "layer": "top",
     "position": "top",
     "modules-left": ["hyprland/workspaces", "custom/media"],
-    "modules-center": ["clock"],
+    "modules-center": ["clock", "tray"],
     "modules-right": ["cpu", "memory", "network", "custom/brightness", "pulseaudio", "custom/power"],
     "margin-left": 5,
     "margin-right": 5,
@@ -17,16 +17,23 @@
             "2": [],
             "3": [],
             "4": [],
+            "5": [],
+            "6": [],
         }
     },
-    
+
+    "tray": {
+      "spacing": 50,
+      "icon-size": 15,
+    },
+
     "clock": {
         "format": "{:%H:%M - %b %d}",
     },
     
     "cpu": {
         "format": "\uf2db {usage}%",
-        // "on-click": "kitty -c 'Floating Terminal' -e htop"
+        // "on-click": "alacritty -e btop"
     },
     
     "memory": {

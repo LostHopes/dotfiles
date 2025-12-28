@@ -1,7 +1,7 @@
 #!/bin/bash
 SCREEN_WIDTH=$(hyprctl monitors -j | jq '.[0].width')
 
-options="Shutdown\nReboot\nSleep"
+options="Shutdown\nReboot\nSleep\nLogout"
 chosen=$(echo -e "$options" | wofi \
     -dmenu \
     -theme ~/.config/wofi/launcher.rasi \
@@ -18,5 +18,8 @@ case $chosen in
         ;;
     "Sleep")
         systemctl suspend
+        ;;
+    "Logout")
+        hyprctl dispatch exit
         ;;
 esac

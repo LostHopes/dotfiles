@@ -15,7 +15,8 @@ window#waybar {
 }
 
 #workspaces,
-#clock {
+#clock,
+#tray {
   background: rgba(40, 40, 40, 0.8);
   border: 1px solid rgba(168, 153, 132, 0.6);
   border-radius: 30px;
