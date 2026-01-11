@@ -16,7 +16,8 @@ window#waybar {
 
 #workspaces,
 #clock,
-#tray {
+#tray,
+#disk {
   background: rgba(40, 40, 40, 0.8);
   border: 1px solid rgba(168, 153, 132, 0.6);
   border-radius: 30px;
@@ -54,7 +55,8 @@ window#waybar {
 #custom-power,
 #custom-brightness,
 #custom-media,
-#pulseaudio {
+#pulseaudio,
+#language{
   background: rgba(40, 40, 40, 0.8);
   border: 1px solid rgba(168, 153, 132, 0.6);
   border-radius: 30px;
@@ -79,3 +81,8 @@ window#waybar {
 #pulseaudio.muted {
   color: #cc241d;
 }
+
+#disk {
+    padding: 0 10px;
+}
+

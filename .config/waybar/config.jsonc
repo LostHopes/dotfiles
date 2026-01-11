@@ -3,7 +3,7 @@
     "position": "top",
     "modules-left": ["hyprland/workspaces", "custom/media"],
     "modules-center": ["clock", "tray"],
-    "modules-right": ["cpu", "memory", "network", "custom/brightness", "pulseaudio", "custom/power"],
+    "modules-right": ["hyprland/language", "disk", "cpu", "memory", "network", "custom/brightness", "pulseaudio", "custom/power"],
     "margin-left": 5,
     "margin-right": 5,
     "margin-bottom": 0,
@@ -20,6 +20,19 @@
             "5": [],
             "6": [],
         }
+    },
+
+    "hyprland/language": {
+      "format": "{short}",
+    },
+
+    "disk": {
+      "interval": 30,
+      "spacing": 10,
+      "format": "󰋊 {percentage_used}%",
+      "format-alt": "󰋊 {used}/{total}",
+      "tooltip-format": "Path: {path}\nUsed: {used} ({percentage_used}%)\nFree: {free} ({percentage_free}%)\nTotal: {total}",
+      "path": "/"
     },
 
     "tray": {
