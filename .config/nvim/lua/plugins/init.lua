@@ -14,19 +14,21 @@ return {
     },
 
     {
-        "ahmedkhalf/project.nvim",
-        lazy = false,
-        config = function()
-            require("project_nvim").setup {
-                manual_mode = false, -- Automatically detect projects
-                detection_methods = { "pattern", "lsp" }, -- Methods for detecting projects
-                patterns = { ".git", "Makefile", "package.json" }, -- Project markers
-                -- show_hidden = true, -- Show hidden files in project listing
-            }
-        end,
+      'DrKJeff16/project.nvim',
+      dependencies = { -- OPTIONAL. Choose any of the following
+        {
+          'nvim-telescope/telescope.nvim',
+          dependencies = { 'nvim-lua/plenary.nvim' },
+        },
+        'wsdjeg/picker.nvim',
+        'folke/snacks.nvim',
+        'ibhagwan/fzf-lua',
+      },
+      opts = {},
     },
 
-    -- {
+
+        -- {
     --     "lervag/vimtex",
     --     -- lazy = false, -- we don't want to lazy load VimTeX
     --     -- tag = "v2.15", -- uncomment to pin to a specific release
