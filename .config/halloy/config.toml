@@ -1,0 +1,11 @@
+# Halloy config.
+#
+# For a complete list of available options,
+# please visit https://halloy.chat/configuration.html
+
+theme = "Gruvbox"
+
+[servers.liberachat]
+nickname = "LostHopes"
+server = "irc.libera.chat"
+channels = ["#halloy", "#lobsters"]
