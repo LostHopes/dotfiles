@@ -6,6 +6,6 @@
 theme = "Gruvbox"
 
 [servers.liberachat]
-nickname = "LostHopes"
+nickname = "losthopes"
 server = "irc.libera.chat"
 channels = ["#halloy", "#lobsters"]
