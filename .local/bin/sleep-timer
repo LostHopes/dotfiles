@@ -3,4 +3,10 @@
 seconds=$(zenity --title="Sleep" --width=300 --height=300 \
  --text="Enter time until sleep in seconds" --entry)
 
+if [[ -z "$seconds" ]]; then
+    printf "You haven't entered time in seconds. \
+Exiting...\n";
+    exit 1;
+fi
+
 sleep $seconds && systemctl suspend
