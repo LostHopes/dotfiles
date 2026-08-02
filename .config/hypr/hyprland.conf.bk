@@ -54,7 +54,8 @@ $editor = code
 exec-once = hyprpaper
 exec-once = waybar
 exec-once = dunst
-exec-once = eval $(keychain --eval --quiet --agents ssh github)
+exec-once = eval $(keychain --eval --quiet --agents ssh id_ed25519)
+exec-once = systemctl --user start hyprpolkitagent
 
 #############################
 ### ENVIRONMENT VARIABLES ###
