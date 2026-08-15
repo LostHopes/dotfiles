@@ -15,7 +15,7 @@ local browser = "vivaldi-stable"
 hl.window_rule({
     name  = "No anim + full opacity apps",
     match = {
-        class = "^(vivaldi-stable|Vivaldi-stable|org.pwmt.zathura|md.Obsidian|org.telegram.desktop|libreoffice.*)$",
+        class = "^(vivaldi-stable|Vivaldi-stable|org.pwmt.zathura|md.obsidian.Obsidian|org.telegram.desktop|libreoffice.*)$",
     },
 
     -- Force 100% opacity for both active AND inactive states
