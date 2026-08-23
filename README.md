@@ -9,7 +9,7 @@ My workflow uses the gruvbox theme.
 I might add a few more themes in the future.
 It looks like this:
 
-![My workflow](screenshots/layout.png)
+![My workflow](screenshots/wayland.webp)
 
 ---
 
@@ -17,20 +17,18 @@ It looks like this:
 
 | Component | Package |
 | :--- | :---: |
-| Compositor | [picom](https://github.com/yshui/picom) |
-| Window Manager | [bspwm](https://github.com/baskerville/bspwm) |
-| Status bar | [polybar](https://github.com/polybar/polybar) |
+| Compositor | [Hyprland](https://github.com/hyprwm/hyprland) |
+| Status bar | [waybar](https://github.com/Alexays/Waybar) |
 | Music player | [ncmpcpp](https://github.com/ncmpcpp/ncmpcpp) |
 | Terminal emulator | [alacritty](https://github.com/alacritty/alacritty) |
 | Terminal based editor | [neovim](https://github.com/neovim/neovim) |
 | GUI based editor | [vscode](https://github.com/microsoft/vscode) |
-| Hotkey daemon | [sxhkd](https://github.com/baskerville/sxhkd) |
 | Media player | [mpv](https://github.com/mpv-player/mpv) |
 | Screenshoter | [flameshot](https://github.com/flameshot-org/flameshot) |
-| App launcher | [rofi](https://github.com/davatorium/rofi) |
+| App launcher | [wofi](https://github.com/SimplyCEO/wofi) |
 | Audio visualizer | [cava](https://github.com/karlstav/cava) |
 | System fetcher | [neofetch](https://github.com/dylanaraps/neofetch) |
-| Login manager | [sddm](https://github.com/sddm/sddm) |
+| Login manager | [ly](https://github.com/fairyglade/ly) |
 | Reader | [zathura](https://github.com/pwmt/zathura) with [poppler](https://github.com/pwmt/zathura-pdf-poppler) backend |
 | AUR Helper | [yay](https://github.com/Jguer/yay) |
 | System monitor | [btop](https://github.com/aristocratos/btop) |
@@ -48,15 +46,15 @@ The rest of the keybinds you can find or change in the sxhkdrc config file.
 | --- | :---: |
 | Close the app | ``Super + Q`` |
 | Terminate the process | ``Super + Shift + Q`` |
-| Terminal | ``Super + Return`` or ``Alt + K`` |
-| Browser | ``Alt + B`` | 
-| Code editor | ``Alt + G`` |
-| File manager | ``Alt + I`` |
-| Volume controller | ``Alt + P`` |
-| Messanger | ``Alt + T`` |
-| Music player (Spotify) | ``Alt + Q`` |
-| Reader | ``Alt + R`` |
-| Notes | ``Alt + O`` |
+| Terminal | ``Super + K`` |
+| Browser | ``Super + B`` | 
+| Code editor | ``Super + G`` |
+| File manager | ``Super + I`` |
+| Volume controller | ``Super + P`` |
+| Messanger | ``Super + T`` |
+| Music player (Spotify) | ``Super + M`` |
+| Reader | ``Super + R`` |
+| Notes | ``Super + O`` |
 
 ### Miscellaneous
 
@@ -65,39 +63,17 @@ The rest of the keybinds you can find or change in the sxhkdrc config file.
 | Switch workspaces | ``Super + 1-6`` |
 | App launcher | ``Super + Space`` |
 | Reload hotkey daemon | ``Super + Esc`` |
-| Random wallpaper | ``Super + Alt + W`` |
-| Restart window manager | ``Super + Alt + R`` |
-| Select theme | ``Alt + Space`` |
 
 ### Window rules
 
 | Action | Hotkey |
 | --- | :---: |
-| Rotate windows | ``Super + R`` |
-| Switch windows | ``Super + C`` |
-| Split equally | ``Super + Equal`` |
-| Switch layout to monocle | ``Super + M`` |
-| Swap the biggest window | ``Super + G`` |
-| Floating mode | ``Super + S`` |
+| Floating/Tiled mode | ``Super + V`` |
 | Fullscreen mode | ``Super + F`` |
-| Tiled mode | ``Super + T`` |
-| Preselect the window based on direction | ``Super + Left, Down, Up, Right`` |
-| Preelect the window based on ratio | ``Super + Ctrl + 1-9`` |
-
-### Session
-
-| Action | Hotkey |
-| --- | :---: |
-| Reboot | ``Ctrl + Super + Alt + R `` |
-| Poweroff | ``Ctrl + Super + Alt + P `` |
-| Sleep | ``Ctrl + Super + Alt + S `` |
-| Quit | ``Ctrl + Super + Alt + Q `` |
 
 ## Todo
 
-- [ ] Fix the install script
-- [ ] Migrate to the wayland
-- [ ] Add more themes
+- [x] Migrate to the wayland
 
 
 
