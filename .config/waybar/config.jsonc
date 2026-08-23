@@ -41,7 +41,30 @@
     },
 
     "clock": {
-        "format": "{:%H:%M - %b %d}",
+	    "format": "{:%H:%M - %b %d}  ",
+	    "format-alt": "{:%A, %B %d, %Y (%R)} 󰃰 ",
+	    "tooltip-format": "<span size='9pt' font='WenQuanYi Zen Hei Mono'>{calendar}</span>",
+	    "calendar": {
+	      "mode"          : "year",
+		    "mode-mon-col"  : 3,
+		    "weeks-pos"     : "right",
+		    "on-scroll"     : 1,
+		    "on-click-right": "mode",
+		    "format": {
+			    "months":     "<span color='#cc241d'><b>{}</b></span>",
+		      "days":       "<span color='#d79921'><b>{}</b></span>",
+			    "weeks":      "<span color='#458588'><b>W{}</b></span>",
+			    "weekdays":   "<span color='#98971a'><b>{}</b></span>",
+			    "today":      "<span color='#b16286'><b><u>{}</u></b></span>"
+		    }
+	    },
+	    "actions": {
+		    "on-click-right": "mode",
+		    "on-click-forward": "tz_up",
+		    "on-click-backward": "tz_down",
+		    "on-scroll-up": "shift_up",
+		    "on-scroll-down": "shift_down"
+	    },
     },
     
     "cpu": {
