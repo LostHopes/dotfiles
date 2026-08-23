@@ -26,7 +26,7 @@ hl.bind(mainMod .. " + V", hl.dsp.window.float({ action = "toggle" }))      -- h
 hl.bind(mainMod .. " + space", function() hl.exec_cmd(programs.menu) end)   -- "wofi --show drun" has args → wrap
 hl.bind(mainMod .. " + P", hl.dsp.window.pseudo())                            -- no args → bare reference, no ()
 hl.bind(mainMod .. " + F", hl.dsp.window.fullscreen({ action = "toggle" })) -- has args → () ok
-
+hl.bind("Print", hl.dsp.exec_cmd(programs.screenshot))
 
 -- ─────────────────────────────────────────────────────────────────────
 -- Move focus with mainMod + arrow keys

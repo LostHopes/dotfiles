@@ -9,4 +9,5 @@ return {
     messanger   = "Telegram",
     music       = "spotify-launcher",
     editor      = "code",
+    screenshot  = "flameshot gui",
 }

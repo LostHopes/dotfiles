@@ -130,3 +130,11 @@ hl.window_rule({
     opacity           = "1.0 override 1.0 override",
 })
 
+hl.window_rule({
+  name    = "Flameshot floating window",
+  match = {
+    class = "org.flameshot.Flameshot",
+  },
+  float   = true,
+  no_anim = true 
+})
